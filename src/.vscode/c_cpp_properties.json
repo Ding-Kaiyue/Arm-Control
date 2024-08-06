@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/dky/Projects/dky_robot/install/robot_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/dky/Projects/dky_robot/src/robot_bringup/include/**",
+        "/home/dky/Projects/dky_robot/src/robot_control/include/**",
+        "/home/dky/Projects/dky_robot/src/robot_description/include/**",
+        "/home/dky/Projects/dky_robot/src/robot_driver/include/**",
+        "/home/dky/Projects/dky_robot/src/robot_gazebo/include/**",
+        "/home/dky/Projects/dky_robot/src/robot_interfaces/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
