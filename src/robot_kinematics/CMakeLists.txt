@@ -16,20 +16,8 @@ find_package(moveit_ros_move_group REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
-# include_directories(
-#   ${rclcpp_INCLUDE_DIRS}
-#   ${geometry_msgs_INCLUDE_DIRS}
-#   ${moveit_ros_planning_interface_INCLUDE_DIRS}
-# )
 
-add_executable(robot_kinematics src/robot_ik.cpp)
-
-# target_link_libraries(${PROJECT_NAME}
-#   ${rclcpp_LIBRARIES}
-#   ${geometry_msgs_LIBRARIES}
-#   ${moveit_ros_planning_interface_LIBRARIES}
-# )
-
+add_executable(robot_kinematics src/robot_kinematics.cpp)
 ament_target_dependencies(robot_kinematics geometry_msgs rclcpp moveit_ros_planning_interface moveit_ros_move_group)
 
 install(TARGETS

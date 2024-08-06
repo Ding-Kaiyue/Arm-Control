@@ -10,7 +10,6 @@
 #include "message_filters/subscriber.h"
 #include "message_filters/time_synchronizer.h"
 #include "sensor_msgs/msg/joint_state.hpp"
-// #include "robot_interfaces/msg/jointpos.hpp"
 #include "std_msgs/msg/string.hpp"
 
 
