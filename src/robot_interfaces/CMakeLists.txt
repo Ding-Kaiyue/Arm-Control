@@ -16,11 +16,12 @@ find_package(std_msgs REQUIRED)
 
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Jointpos.msg"
-  "msg/Movef.msg"
-  "msg/Moves.msg"
-  "msg/Movet.msg"
-  "msg/Stop.msg"
+  # "msg/Jointpos.msg"
+  # "msg/Movef.msg"
+  # "msg/Moves.msg"
+  # "msg/Movet.msg"
+  # "msg/Stop.msg"
+  "msg/LineMsg.msg"
   DEPENDENCIES std_msgs geometry_msgs 
 )
 if(BUILD_TESTING)

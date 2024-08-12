@@ -8,50 +8,50 @@
 #include <vector>
 #include <cmath>
 #include <iostream>
+#include "robot_interfaces/msg/line_msg.hpp"
 
 using std::placeholders::_1;
+using std::placeholders::_2;
 bool initial_flag = false;
 
 class Robot_Cartesian : public rclcpp :: Node
 {
 private:
     std::shared_ptr<moveit::planning_interface::MoveGroupInterface> arm;
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscriber_trajectory;
+    rclcpp::Subscription<robot_interfaces::msg::LineMsg>::SharedPtr subscriber_trajectory_line;
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr subscriber_initial_pose;
+    uint32_t run_line_times = 0;
 
-
-    void arm_trajectiry_goal_callback(const std_msgs::msg::String::SharedPtr msg) {
-        std::string traj = msg->data;
-        
-        if (traj == "line") {
+    void arm_trajectiry_goal_callback(const robot_interfaces::msg::LineMsg::SharedPtr msg) {
+        if (msg->type == 0) {
             geometry_msgs::msg::Pose pose;
-            pose.position.x = 0.0;
-            pose.position.y = 0.2;
-            pose.position.z = 0.25;
-            pose.orientation.x = 0.0;
-            pose.orientation.y = 1.0;
-            pose.orientation.z = 0.0;
-            pose.orientation.w = 0.0;
-            arm->setPoseTarget(pose);
-            arm->move();
+            pose.position.x = msg->initial_pose.position.x;        // 0.0
+            pose.position.y = msg->initial_pose.position.y;        // 0.2
+            pose.position.z = msg->initial_pose.position.z;        // 0.25
+            pose.orientation.x = msg->initial_pose.orientation.x;  // 0.0
+            pose.orientation.y = msg->initial_pose.orientation.y;  // 1.0
+            pose.orientation.z = msg->initial_pose.orientation.z;  // 0.0
+            pose.orientation.w = msg->initial_pose.orientation.w;  // 0.0
 
+            // Only first time the initial pose is run
+            if (run_line_times == 0) {
+                arm->setPoseTarget(pose);
+                arm->move();
+            }
+
+            run_line_times++;
             std::vector<geometry_msgs::msg::Pose> waypoints;
-            waypoints.push_back(pose);
-
+            if (run_line_times == 0) {
+                waypoints.push_back(pose);
+            }
             // -------------- line ---------------
             geometry_msgs::msg::Pose wpose = pose;
-            wpose.position.y += 0.15;
+            wpose.position.x += msg->delta_x;
+            wpose.position.y += msg->delta_y;
+            wpose.position.z += msg->delta_z;
+            
             waypoints.push_back(wpose);
-
-            wpose.position.x -= 0.15;
-            waypoints.push_back(wpose);
-
-            wpose.position.z -= 0.1;
-            waypoints.push_back(wpose);
-
             // -------------- line ---------------
-
-
             arm->setStartStateToCurrentState();
 
             moveit_msgs::msg::RobotTrajectory trajectory;
@@ -76,15 +76,15 @@ private:
                 RCLCPP_INFO(this->get_logger(), "Cartesian path planning failed after %d attempts. The fraction is %f", attempts, fraction);
             }
         }
-        else if (traj == "circle") {
+        else if (msg->type == 1) {
             geometry_msgs::msg::Pose pose;
-            pose.position.x = 0.0;
-            pose.position.y = 0.2;
-            pose.position.z = 0.25;
-            pose.orientation.x = 0.0;
-            pose.orientation.y = 1.0;
-            pose.orientation.z = 0.0;
-            pose.orientation.w = 0.0;
+            pose.position.x = msg->initial_pose.position.x;        // 0.0
+            pose.position.y = msg->initial_pose.position.y;        // 0.2
+            pose.position.z = msg->initial_pose.position.z;        // 0.25
+            pose.orientation.x = msg->initial_pose.orientation.x;  // 0.0
+            pose.orientation.y = msg->initial_pose.orientation.y;  // 1.0
+            pose.orientation.z = msg->initial_pose.orientation.z;  // 0.0
+            pose.orientation.w = msg->initial_pose.orientation.w;  // 0.0
             arm->setPoseTarget(pose);
             arm->move();
 
@@ -94,7 +94,7 @@ private:
             // --------- circle ---------
             double centerA = pose.position.x;
             double centerB = pose.position.y;
-            double radius = 0.08;
+            double radius = msg->radius;        // 0.08
 
             for (double th = 0; th < 6.28; th += 0.02) {
                 geometry_msgs::msg::Pose wpose = pose;
@@ -130,7 +130,7 @@ private:
         } 
 
         else {
-            RCLCPP_INFO(this->get_logger(), "Received unknown trajectory goal: %s", msg->data.c_str());
+            RCLCPP_INFO(this->get_logger(), "Received unknown trajectory goal: %d", msg->type);
         }
     }
 
@@ -147,7 +147,7 @@ private:
     
 public:
     Robot_Cartesian(const std::string& node_name) : Node(node_name) {
-        subscriber_trajectory = this->create_subscription<std_msgs::msg::String>("robot_cartesian_planning_trajectory", 10, std::bind(&Robot_Cartesian::arm_trajectiry_goal_callback, this, _1));
+        subscriber_trajectory_line = this->create_subscription<robot_interfaces::msg::LineMsg>("robot_cartesian_planning_trajectory", 10, std::bind(&Robot_Cartesian::arm_trajectiry_goal_callback, this, _1));
         subscriber_initial_pose = this->create_subscription<std_msgs::msg::Bool>("if_initial", 10, std::bind(&Robot_Cartesian::arm_initial_call_back, this, _1));
         arm = std::make_shared<moveit::planning_interface::MoveGroupInterface>(rclcpp::Node::SharedPtr(this), std::string("arm"));
 
