@@ -26,30 +26,17 @@ private:
         if (traj == "line") {
             geometry_msgs::msg::Pose pose;
             pose.position.x = 0.0;
-            pose.position.y = 0.0;
-            pose.position.z = 0.5;
+            pose.position.y = 0.2;
+            pose.position.z = 0.25;
             pose.orientation.x = 0.0;
-            pose.orientation.y = 0.70692;
+            pose.orientation.y = 1.0;
             pose.orientation.z = 0.0;
-            pose.orientation.w = -0.70729;
+            pose.orientation.w = 0.0;
             arm->setPoseTarget(pose);
             arm->move();
 
             std::vector<geometry_msgs::msg::Pose> waypoints;
             waypoints.push_back(pose);
-
-            // --------- circle ---------
-            // double centerA = pose.position.y;
-            // double centerB = pose.position.z;
-            // double radius = 0.08;
-
-            // for (double th = 0; th < 6.28; th += 0.02) {
-            //     geometry_msgs::msg::Pose wpose = pose;
-            //     wpose.position.y = centerA + radius * cos(th);
-            //     wpose.position.z = centerB + radius * sin(th);
-            //     waypoints.push_back(wpose);
-            // }
-            // --------- circle ---------
 
             // -------------- line ---------------
             geometry_msgs::msg::Pose wpose = pose;
@@ -89,7 +76,59 @@ private:
                 RCLCPP_INFO(this->get_logger(), "Cartesian path planning failed after %d attempts. The fraction is %f", attempts, fraction);
             }
         }
-            
+        else if (traj == "circle") {
+            geometry_msgs::msg::Pose pose;
+            pose.position.x = 0.0;
+            pose.position.y = 0.2;
+            pose.position.z = 0.25;
+            pose.orientation.x = 0.0;
+            pose.orientation.y = 1.0;
+            pose.orientation.z = 0.0;
+            pose.orientation.w = 0.0;
+            arm->setPoseTarget(pose);
+            arm->move();
+
+            std::vector<geometry_msgs::msg::Pose> waypoints;
+            waypoints.push_back(pose);
+
+            // --------- circle ---------
+            double centerA = pose.position.x;
+            double centerB = pose.position.y;
+            double radius = 0.08;
+
+            for (double th = 0; th < 6.28; th += 0.02) {
+                geometry_msgs::msg::Pose wpose = pose;
+                wpose.position.x = centerA + radius * cos(th);
+                wpose.position.y = centerB + radius * sin(th);
+                waypoints.push_back(wpose);
+            }
+            // --------- circle ---------
+
+            arm->setStartStateToCurrentState();
+
+            moveit_msgs::msg::RobotTrajectory trajectory;
+            double fraction = 0.0f;     // 路径规划覆盖率
+            int maxtries = 100;         // 最大尝试次数
+            int attempts = 0;           // 已尝试规划次数
+            while (fraction < 1.0 && attempts < maxtries) {
+                fraction = arm->computeCartesianPath(waypoints, 0.01, 0.00, trajectory, true);
+                attempts++;
+
+                if (attempts % 10 == 0) {
+                    RCLCPP_INFO(this->get_logger(), "Still trying after %d attempts...", attempts);
+                }
+            }
+            if (fraction == 1.0 && attempts < maxtries) {
+                RCLCPP_INFO(this->get_logger(), "Cartesian path successfully planned and executed after %d attempts.", attempts);
+                arm->execute(trajectory);
+                RCLCPP_INFO(this->get_logger(), "Cartesian path successfully execution."); 
+            }
+
+            else if (fraction < 1.0) {
+                RCLCPP_INFO(this->get_logger(), "Cartesian path planning failed after %d attempts. The fraction is %f", attempts, fraction);
+            }
+        } 
+
         else {
             RCLCPP_INFO(this->get_logger(), "Received unknown trajectory goal: %s", msg->data.c_str());
         }

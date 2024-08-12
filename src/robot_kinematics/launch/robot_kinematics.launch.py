@@ -5,7 +5,7 @@ def generate_launch_description():
     ld = LaunchDescription()
     robot_ik = Node (
         package = 'robot_kinematics',
-        executable ='robot_ik',
+        executable ='robot_kinematics',
     )
     ld.add_action(robot_ik)
     return ld
