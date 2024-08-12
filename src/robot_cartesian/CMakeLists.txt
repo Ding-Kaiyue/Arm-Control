@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(robot_kinematics)
+project(robot_cartesian)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -7,21 +7,18 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
 find_package(moveit_ros_move_group REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(moveit_msgs REQUIRED)
 
-
-add_executable(robot_kinematics src/robot_kinematics.cpp)
-ament_target_dependencies(robot_kinematics geometry_msgs std_msgs rclcpp moveit_ros_planning_interface moveit_ros_move_group)
+add_executable(robot_cartesian src/robot_cartesian.cpp)
+ament_target_dependencies(robot_cartesian rclcpp moveit_ros_planning_interface moveit_ros_move_group std_msgs rclcpp geometry_msgs moveit_msgs)
 
 install(TARGETS
-    robot_kinematics
+    robot_cartesian
     DESTINATION lib/${PROJECT_NAME}
 )
 

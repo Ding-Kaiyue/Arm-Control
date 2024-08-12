@@ -55,9 +55,7 @@ public:
 
         arm = std::make_shared<moveit::planning_interface::MoveGroupInterface>(rclcpp::Node::SharedPtr(this), std::string("arm"));
 
-        std::string reference_frame = "base_link";
-        arm->setPoseReferenceFrame(reference_frame);
-
+        arm->setPoseReferenceFrame("base_link");
         arm->allowReplanning(true);
         arm->setGoalPositionTolerance(0.0005);
         arm->setGoalOrientationTolerance(0.0007);
