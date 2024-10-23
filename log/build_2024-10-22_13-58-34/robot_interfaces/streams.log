@@ -1,0 +1,280 @@
+[0.008s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_interfaces -- -j20 -l20
+[0.028s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.121s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.123s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.124s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.147s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.165s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.245s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.314s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.315s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.431s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.700s] -- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.703s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.704s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.929s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.120s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.357s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.376s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.392s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.392s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.393s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.420s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.425s] -- Added test 'lint_cmake' to check CMake code style
+[1.426s] -- Added test 'xmllint' to check XML markup files
+[1.427s] -- Configuring done
+[1.451s] -- Generating done
+[1.453s] -- Build files have been written to: /home/dky/Projects/dky_robot/build/robot_interfaces
+[1.478s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.483s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.491s] [  4%] Built target ament_cmake_python_copy_robot_interfaces
+[1.656s] running egg_info
+[1.656s] writing robot_interfaces.egg-info/PKG-INFO
+[1.656s] writing dependency_links to robot_interfaces.egg-info/dependency_links.txt
+[1.656s] writing top-level names to robot_interfaces.egg-info/top_level.txt
+[1.658s] reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'
+[1.658s] writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'
+[1.679s] [  4%] Built target ament_cmake_python_build_robot_interfaces_egg
+[1.736s] [  4%] Built target robot_interfaces__cpp
+[1.743s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_generator_c[0m
+[1.743s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.744s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.745s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.751s] [ 17%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/arm_state__functions.c.o[0m
+[1.751s] [ 17%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/qt_recv__functions.c.o[0m
+[1.752s] [ 17%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/line_msg__functions.c.o[0m
+[1.802s] [ 19%] [32m[1mLinking C shared library librobot_interfaces__rosidl_generator_c.so[0m
+[1.832s] [ 19%] Built target robot_interfaces__rosidl_generator_c
+[1.839s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.840s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.842s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.973s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.981s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.986s] [ 27%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/qt_recv__type_support.cpp.o[0m
+[1.987s] [ 29%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/line_msg__type_support.cpp.o[0m
+[1.990s] [ 31%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/line_msg__type_support.cpp.o[0m
+[1.990s] [ 34%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/arm_state__type_support.cpp.o[0m
+[1.990s] [ 36%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/qt_recv__type_support.cpp.o[0m
+[1.994s] [ 38%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/arm_state__type_support.cpp.o[0m
+[2.081s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_c[0m
+[2.092s] [ 40%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/qt_recv__type_support_c.cpp.o[0m
+[2.095s] [ 42%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/line_msg__type_support_c.cpp.o[0m
+[2.095s] [ 44%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/arm_state__type_support_c.cpp.o[0m
+[2.103s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_c[0m
+[2.117s] [ 46%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/line_msg__type_support.cpp.o[0m
+[2.118s] [ 48%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/arm_state__type_support.cpp.o[0m
+[2.120s] [ 51%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/qt_recv__type_support.cpp.o[0m
+[2.140s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_cpp[0m
+[2.155s] [ 55%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/line_msg__type_support.cpp.o[0m
+[2.155s] [ 55%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/arm_state__type_support.cpp.o[0m
+[2.155s] [ 57%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/qt_recv__type_support.cpp.o[0m
+[2.170s] [ 59%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_c.so[0m
+[2.176s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_c[0m
+[2.187s] [ 61%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/qt_recv__type_support.c.o[0m
+[2.188s] [ 63%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/arm_state__type_support.c.o[0m
+[2.191s] [ 65%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/line_msg__type_support.c.o[0m
+[2.217s] [ 65%] Built target robot_interfaces__rosidl_typesupport_c
+[2.229s] [ 68%] [32m[1mLinking C shared library librobot_interfaces__rosidl_typesupport_introspection_c.so[0m
+[2.265s] [ 68%] Built target robot_interfaces__rosidl_typesupport_introspection_c
+[2.366s] [ 70%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.380s] [ 72%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.409s] [ 74%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_cpp.so[0m
+[2.418s] [ 74%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp
+[2.441s] [ 74%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.444s] [ 74%] Built target robot_interfaces__rosidl_typesupport_cpp
+[2.506s] [ 76%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.558s] [ 76%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c
+[2.579s] [ 76%] Built target robot_interfaces
+[2.599s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.972s] [ 78%] Built target robot_interfaces__py
+[2.983s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_generator_py[0m
+[2.995s] [ 80%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_arm_state_s.c.o[0m
+[2.998s] [ 85%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_line_msg_s.c.o[0m
+[2.998s] [ 85%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_qt_recv_s.c.o[0m
+[3.089s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/robot_interfaces/librobot_interfaces__rosidl_generator_py.so[0m
+[3.121s] [ 87%] Built target robot_interfaces__rosidl_generator_py
+[3.132s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_c__pyext[0m
+[3.132s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.132s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[3.141s] [ 89%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.142s] [ 91%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[3.143s] [ 93%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.207s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.210s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.212s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.238s] [100%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.244s] [100%] Built target robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.253s] [100%] Built target robot_interfaces__rosidl_typesupport_c__pyext
+[3.261s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_interfaces -- -j20 -l20
+[3.356s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_interfaces
+[3.363s] -- Install configuration: ""
+[3.363s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/robot_interfaces
+[3.363s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[3.363s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[3.363s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[3.363s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__struct.h
+[3.363s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__functions.c
+[3.363s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__functions.c
+[3.363s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__type_support.h
+[3.363s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__struct.h
+[3.363s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__type_support.h
+[3.364s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__functions.h
+[3.364s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__functions.h
+[3.364s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__struct.h
+[3.364s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__type_support.h
+[3.364s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__functions.h
+[3.364s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__functions.c
+[3.364s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.364s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/qt_recv.h
+[3.364s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/arm_state.h
+[3.364s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/line_msg.h
+[3.364s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/library_path.sh
+[3.365s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/library_path.dsv
+[3.365s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so
+[3.365s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so" to ""
+[3.365s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[3.365s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[3.365s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[3.365s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__rosidl_typesupport_fastrtps_c.h
+[3.365s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__rosidl_typesupport_fastrtps_c.h
+[3.365s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__rosidl_typesupport_fastrtps_c.h
+[3.365s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.365s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.365s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[3.365s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[3.365s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[3.366s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[3.366s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__rosidl_typesupport_introspection_c.h
+[3.366s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__type_support.c
+[3.366s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__type_support.c
+[3.366s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__rosidl_typesupport_introspection_c.h
+[3.366s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__type_support.c
+[3.366s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__rosidl_typesupport_introspection_c.h
+[3.366s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.366s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so
+[3.366s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[3.366s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so
+[3.367s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so" to ""
+[3.367s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[3.367s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[3.367s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__struct.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__struct.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__traits.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__builder.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__traits.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__builder.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__traits.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__struct.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__builder.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/line_msg.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/arm_state.hpp
+[3.367s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/qt_recv.hpp
+[3.368s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[3.368s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[3.368s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[3.368s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__rosidl_typesupport_fastrtps_cpp.hpp
+[3.368s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[3.368s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__rosidl_typesupport_fastrtps_cpp.hpp
+[3.368s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/dds_fastrtps
+[3.368s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.368s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.368s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.368s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[3.368s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[3.368s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[3.369s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__rosidl_typesupport_introspection_cpp.hpp
+[3.369s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__type_support.cpp
+[3.369s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__rosidl_typesupport_introspection_cpp.hpp
+[3.369s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__rosidl_typesupport_introspection_cpp.hpp
+[3.369s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__type_support.cpp
+[3.369s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__type_support.cpp
+[3.369s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.369s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[3.370s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so
+[3.370s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so" to ""
+[3.370s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.sh
+[3.370s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.dsv
+[3.370s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info
+[3.370s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.370s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.370s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.370s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.371s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/librobot_interfaces__rosidl_generator_py.so
+[3.371s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_line_msg_s.c
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_arm_state_s.c
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_arm_state.py
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_qt_recv.py
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_line_msg.py
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_qt_recv_s.c
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.371s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.399s] Listing '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces'...
+[3.399s] Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py'...
+[3.399s] Listing '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg'...
+[3.399s] Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py'...
+[3.399s] Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_arm_state.py'...
+[3.399s] Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_line_msg.py'...
+[3.399s] Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_qt_recv.py'...
+[3.402s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.403s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.403s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.403s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.403s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.404s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.404s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so
+[3.404s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so" to ""
+[3.405s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/QtRecv.idl
+[3.405s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/LineMsg.idl
+[3.405s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/ArmState.idl
+[3.405s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/QtRecv.msg
+[3.405s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/LineMsg.msg
+[3.405s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/ArmState.msg
+[3.405s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/ament_index/resource_index/package_run_dependencies/robot_interfaces
+[3.405s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/ament_index/resource_index/parent_prefix_path/robot_interfaces
+[3.406s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.sh
+[3.406s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.dsv
+[3.406s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/path.sh
+[3.406s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/path.dsv
+[3.406s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/local_setup.bash
+[3.406s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/local_setup.sh
+[3.406s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/local_setup.zsh
+[3.406s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/local_setup.dsv
+[3.406s] -- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.dsv
+[3.406s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/ament_index/resource_index/packages/robot_interfaces
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cppExport.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.407s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.408s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.408s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport.cmake
+[3.408s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.408s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport.cmake
+[3.408s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.408s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.408s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.408s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.409s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.409s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.409s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.409s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.409s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig.cmake
+[3.409s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig-version.cmake
+[3.409s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.xml
+[3.411s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_interfaces

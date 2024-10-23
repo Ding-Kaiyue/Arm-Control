@@ -1,0 +1,43 @@
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:[m[K In member function ‘[01m[Kvoid ArmFKNode::robot_fk_callback(robot_interfaces::msg::QtRecv_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:35:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   35 |             if (msg->[01;31m[Kdata[m[K.size() < 6) {
+      |                      [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:1[m[K:
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:36:102:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   36 |                 RCLCPP_WARN(this->get_logger(), "Received joint goal with incorrect size: %zu", msg->[01;31m[Kdata[m[K.size());
+      |                                                                                                      [01;31m[K^~~~[m[K
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:40:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   40 |                                                                   msg->[01;31m[Kdata[m[K[1], msg->data[2], msg->data[3],
+      |                                                                        [01;31m[K^~~~[m[K
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:40:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   40 |                                                                   msg->data[1], msg->[01;31m[Kdata[m[K[2], msg->data[3],
+      |                                                                                      [01;31m[K^~~~[m[K
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:40:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   40 |                                                                   msg->data[1], msg->data[2], msg->[01;31m[Kdata[m[K[3],
+      |                                                                                                    [01;31m[K^~~~[m[K
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:41:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   41 |                                                                   msg->[01;31m[Kdata[m[K[4], msg->data[5], msg->data[6]);
+      |                                                                        [01;31m[K^~~~[m[K
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:41:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   41 |                                                                   msg->data[4], msg->[01;31m[Kdata[m[K[5], msg->data[6]);
+      |                                                                                      [01;31m[K^~~~[m[K
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:41:100:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   41 |                                                                   msg->data[4], msg->data[5], msg->[01;31m[Kdata[m[K[6]);
+      |                                                                                                    [01;31m[K^~~~[m[K
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_fk.cpp:46:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_interfaces::msg::QtRecv_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+   46 |                 joint_group_positions[i] = static_cast<double>(msg->[01;31m[Kdata[m[K[i+1] * M_PI / 180.0);
+      |                                                                     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/robot_fk.dir/build.make:76: CMakeFiles/robot_fk.dir/src/robot_fk.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/robot_fk.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

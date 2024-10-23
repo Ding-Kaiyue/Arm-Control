@@ -1,0 +1,7 @@
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_func.cpp:[m[K In member function ‘[01m[Kvoid RobotFunctions::working_mode_callback(robot_interfaces::msg::QtRecv_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_func.cpp:76:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group_interface[m[K’ was not declared in this scope
+   76 |                     moveit::core::RobotStatePtr current_state = [01;31m[Kmove_group_interface[m[K.getCurrentState();
+      |                                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/robot_func.dir/build.make:76: CMakeFiles/robot_func.dir/src/robot_func.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/robot_func.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,27 @@
+[0.027s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_cartesian': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_cartesian -- -j20 -l20
+[0.093s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_cartesian.dir/src/robot_cartesian.cpp.o[0m
+[11.700s] [100%] [32m[1mLinking CXX executable robot_cartesian[0m
+[12.298s] [100%] Built target robot_cartesian
+[12.306s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_cartesian' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_cartesian -- -j20 -l20
+[12.330s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_cartesian': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_cartesian
+[12.335s] -- Install configuration: ""
+[12.335s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/lib/robot_cartesian/robot_cartesian
+[12.339s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_cartesian/lib/robot_cartesian/robot_cartesian" to ""
+[12.339s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/launch
+[12.339s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/launch/robot_cartesian.launch.py
+[12.339s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/ament_index/resource_index/package_run_dependencies/robot_cartesian
+[12.339s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/ament_index/resource_index/parent_prefix_path/robot_cartesian
+[12.339s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/environment/ament_prefix_path.sh
+[12.339s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/environment/ament_prefix_path.dsv
+[12.339s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/environment/path.sh
+[12.339s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/environment/path.dsv
+[12.340s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/local_setup.bash
+[12.340s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/local_setup.sh
+[12.340s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/local_setup.zsh
+[12.340s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/local_setup.dsv
+[12.340s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.dsv
+[12.340s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/ament_index/resource_index/packages/robot_cartesian
+[12.340s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/cmake/robot_cartesianConfig.cmake
+[12.340s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/cmake/robot_cartesianConfig-version.cmake
+[12.340s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.xml
+[12.341s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_cartesian' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_cartesian

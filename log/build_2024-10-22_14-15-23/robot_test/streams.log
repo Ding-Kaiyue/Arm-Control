@@ -1,0 +1,26 @@
+[0.010s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_test': CMAKE_PREFIX_PATH=/home/dky/Projects/dky_robot/install/robot_interfaces:/home/dky/Projects/dky_robot/install/robot_test:/home/dky/Projects/dky_robot/install/robot_qtrecv:/home/dky/Projects/dky_robot/install/robot_kinematics:/home/dky/Projects/dky_robot/install/robot_gazebo:/home/dky/Projects/dky_robot/install/robot_driver:/home/dky/Projects/dky_robot/install/robot_config:/home/dky/Projects/dky_robot/install/robot_description:/home/dky/Projects/dky_robot/install/robot_control:/home/dky/Projects/dky_robot/install/robot_cartesian:/home/dky/Projects/dky_robot/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_test -- -j20 -l20
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target robot_test[0m
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_test.dir/src/robot_test.cpp.o[0m
+[2.753s] [100%] [32m[1mLinking CXX executable robot_test[0m
+[2.881s] [100%] Built target robot_test
+[2.891s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_test' returned '0': CMAKE_PREFIX_PATH=/home/dky/Projects/dky_robot/install/robot_interfaces:/home/dky/Projects/dky_robot/install/robot_test:/home/dky/Projects/dky_robot/install/robot_qtrecv:/home/dky/Projects/dky_robot/install/robot_kinematics:/home/dky/Projects/dky_robot/install/robot_gazebo:/home/dky/Projects/dky_robot/install/robot_driver:/home/dky/Projects/dky_robot/install/robot_config:/home/dky/Projects/dky_robot/install/robot_description:/home/dky/Projects/dky_robot/install/robot_control:/home/dky/Projects/dky_robot/install/robot_cartesian:/home/dky/Projects/dky_robot/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_test -- -j20 -l20
+[2.914s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_test': CMAKE_PREFIX_PATH=/home/dky/Projects/dky_robot/install/robot_interfaces:/home/dky/Projects/dky_robot/install/robot_test:/home/dky/Projects/dky_robot/install/robot_qtrecv:/home/dky/Projects/dky_robot/install/robot_kinematics:/home/dky/Projects/dky_robot/install/robot_gazebo:/home/dky/Projects/dky_robot/install/robot_driver:/home/dky/Projects/dky_robot/install/robot_config:/home/dky/Projects/dky_robot/install/robot_description:/home/dky/Projects/dky_robot/install/robot_control:/home/dky/Projects/dky_robot/install/robot_cartesian:/home/dky/Projects/dky_robot/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_test
+[2.920s] -- Install configuration: ""
+[2.920s] -- Installing: /home/dky/Projects/dky_robot/install/robot_test/lib/robot_test/robot_test
+[2.921s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_test/lib/robot_test/robot_test" to ""
+[2.921s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/ament_index/resource_index/package_run_dependencies/robot_test
+[2.921s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/ament_index/resource_index/parent_prefix_path/robot_test
+[2.921s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/environment/ament_prefix_path.sh
+[2.922s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/environment/ament_prefix_path.dsv
+[2.922s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/environment/path.sh
+[2.922s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/environment/path.dsv
+[2.922s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/local_setup.bash
+[2.922s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/local_setup.sh
+[2.922s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/local_setup.zsh
+[2.922s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/local_setup.dsv
+[2.922s] -- Installing: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/package.dsv
+[2.922s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/ament_index/resource_index/packages/robot_test
+[2.923s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/cmake/robot_testConfig.cmake
+[2.923s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/cmake/robot_testConfig-version.cmake
+[2.923s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/package.xml
+[2.924s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_test' returned '0': CMAKE_PREFIX_PATH=/home/dky/Projects/dky_robot/install/robot_interfaces:/home/dky/Projects/dky_robot/install/robot_test:/home/dky/Projects/dky_robot/install/robot_qtrecv:/home/dky/Projects/dky_robot/install/robot_kinematics:/home/dky/Projects/dky_robot/install/robot_gazebo:/home/dky/Projects/dky_robot/install/robot_driver:/home/dky/Projects/dky_robot/install/robot_config:/home/dky/Projects/dky_robot/install/robot_description:/home/dky/Projects/dky_robot/install/robot_control:/home/dky/Projects/dky_robot/install/robot_cartesian:/home/dky/Projects/dky_robot/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_test

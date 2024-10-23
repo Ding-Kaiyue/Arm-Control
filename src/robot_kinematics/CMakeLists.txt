@@ -15,13 +15,19 @@ find_package(moveit_ros_planning_interface REQUIRED)
 find_package(moveit_ros_move_group REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(robot_interfaces REQUIRED)
 
 
-add_executable(robot_kinematics src/robot_kinematics.cpp)
-ament_target_dependencies(robot_kinematics geometry_msgs std_msgs rclcpp moveit_ros_planning_interface moveit_ros_move_group)
+add_executable(robot_state_get src/robot_state_get.cpp)
+ament_target_dependencies(robot_state_get geometry_msgs std_msgs rclcpp moveit_ros_planning_interface moveit_ros_move_group tf2_ros robot_interfaces)
+
+add_executable(robot_func src/robot_func.cpp)
+ament_target_dependencies(robot_func geometry_msgs std_msgs rclcpp moveit_ros_planning_interface moveit_ros_move_group robot_interfaces sensor_msgs)
 
 install(TARGETS
-    robot_kinematics
+    robot_state_get
+    robot_func
     DESTINATION lib/${PROJECT_NAME}
 )
 

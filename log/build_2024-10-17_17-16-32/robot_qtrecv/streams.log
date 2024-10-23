@@ -1,0 +1,53 @@
+[0.082s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_qtrecv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_qtrecv -- -j20 -l20
+[0.160s] [35m[1mConsolidate compiler generated dependencies of target robot_qtrecv[0m
+[0.166s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_qtrecv.dir/src/robot_qtrecv.cpp.o[0m
+[2.026s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.026s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.027s]                  from [01m[K/home/dky/Projects/dky_robot/src/robot_qtrecv/src/robot_qtrecv.cpp:9[m[K:
+[2.027s] [01m[K/home/dky/Projects/dky_robot/src/robot_qtrecv/src/robot_qtrecv.cpp:[m[K In member function ‘[01m[Kvoid QtMessageProcessor::receive_qt_data()[m[K’:
+[2.027s] [01m[K/home/dky/Projects/dky_robot/src/robot_qtrecv/src/robot_qtrecv.cpp:265:66:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kstd::vector<std_msgs::msg::MultiArrayDimension_<std::allocator<void> >, std::allocator<std_msgs::msg::MultiArrayDimension_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.027s]   265 |                            RCLCPP_ERROR(this->get_logger(), [01;35m[K"qt_cmd_raw.layout.dim.size() %d qt_cmd_raw.layout.dim[0].size %d: "[m[K, [32m[Kqt_cmd_raw.layout.dim.size()[m[K, qt_cmd_raw.layout.dim[0].size);
+[2.028s]       |                                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.028s]       |                                                                                                                                                             [32m[K|[m[K
+[2.028s]       |                                                                                                                                                             [32m[Kstd::vector<std_msgs::msg::MultiArrayDimension_<std::allocator<void> >, std::allocator<std_msgs::msg::MultiArrayDimension_<std::allocator<void> > > >::size_type {aka long unsigned int}[m[K
+[2.028s] 
+[2.028s] [01m[K/home/dky/Projects/dky_robot/src/robot_qtrecv/src/robot_qtrecv.cpp:265:97:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.028s]   265 | PP_ERROR(this->get_logger(), "qt_cmd_raw.layout.dim.size() [01;36m[K%d[m[K qt_cmd_raw.layout.dim[0].size %d: ", qt_cmd_raw.layout.dim.size(), qt_cmd_raw.layout.dim[0].size);
+[2.028s]       |                                                            [01;36m[K~^[m[K
+[2.028s]       |                                                             [01;36m[K|[m[K
+[2.028s]       |                                                             [01;36m[Kint[m[K
+[2.029s]       |                                                            [32m[K%ld[m[K
+[6.569s] [100%] [32m[1mLinking CXX executable robot_qtrecv[0m
+[6.902s] [100%] Built target robot_qtrecv
+[6.912s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_qtrecv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_qtrecv -- -j20 -l20
+[6.939s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_qtrecv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_qtrecv
+[6.943s] -- Install configuration: ""
+[6.943s] -- Installing: /home/dky/Projects/dky_robot/install/robot_qtrecv/lib/robot_qtrecv/robot_qtrecv
+[6.948s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_qtrecv/lib/robot_qtrecv/robot_qtrecv" to ""
+[6.948s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/launch
+[6.948s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/launch/robot_qtrecv.launch.py
+[6.948s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/ament_index/resource_index/package_run_dependencies/robot_qtrecv
+[6.948s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/ament_index/resource_index/parent_prefix_path/robot_qtrecv
+[6.948s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/environment/ament_prefix_path.sh
+[6.949s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/environment/ament_prefix_path.dsv
+[6.949s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/environment/path.sh
+[6.949s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/environment/path.dsv
+[6.949s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/local_setup.bash
+[6.949s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/local_setup.sh
+[6.949s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/local_setup.zsh
+[6.950s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/local_setup.dsv
+[6.951s] -- Installing: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.dsv
+[6.951s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/ament_index/resource_index/packages/robot_qtrecv
+[6.951s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/cmake/robot_qtrecvConfig.cmake
+[6.951s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/cmake/robot_qtrecvConfig-version.cmake
+[6.951s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.xml
+[6.952s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_qtrecv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_qtrecv

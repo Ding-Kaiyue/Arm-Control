@@ -1,0 +1,45 @@
+[0.026s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_kinematics -- -j20 -l20
+[0.077s] [ 12%] [32mBuilding CXX object CMakeFiles/robot_state_get.dir/src/robot_state_get.cpp.o[0m
+[0.084s] [ 25%] [32mBuilding CXX object CMakeFiles/robot_func.dir/src/robot_func.cpp.o[0m
+[0.086s] [ 37%] [32mBuilding CXX object CMakeFiles/robot_fk.dir/src/robot_fk.cpp.o[0m
+[0.086s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_ik.dir/src/robot_ik.cpp.o[0m
+[3.385s] [ 62%] [32m[1mLinking CXX executable robot_state_get[0m
+[3.950s] [ 62%] Built target robot_state_get
+[6.105s] [ 75%] [32m[1mLinking CXX executable robot_func[0m
+[6.376s] [ 75%] Built target robot_func
+[8.778s] [ 87%] [32m[1mLinking CXX executable robot_fk[0m
+[9.204s] [100%] [32m[1mLinking CXX executable robot_ik[0m
+[9.257s] [100%] Built target robot_fk
+[9.694s] [100%] Built target robot_ik
+[9.703s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_kinematics -- -j20 -l20
+[9.740s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_kinematics
+[9.747s] -- Install configuration: ""
+[9.747s] -- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_ik
+[9.749s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_ik" to ""
+[9.749s] -- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_fk
+[9.751s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_fk" to ""
+[9.751s] -- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_state_get
+[9.752s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_state_get" to ""
+[9.752s] -- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_func
+[9.754s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_func" to ""
+[9.755s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch
+[9.755s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch/robot_state_get.launch.py
+[9.755s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch/robot_func.launch.py
+[9.755s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch/robot_ik.launch.py
+[9.755s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch/robot_fk.launch.py
+[9.755s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/ament_index/resource_index/package_run_dependencies/robot_kinematics
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/ament_index/resource_index/parent_prefix_path/robot_kinematics
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/environment/ament_prefix_path.sh
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/environment/ament_prefix_path.dsv
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/environment/path.sh
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/environment/path.dsv
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/local_setup.bash
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/local_setup.sh
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/local_setup.zsh
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/local_setup.dsv
+[9.756s] -- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.dsv
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/ament_index/resource_index/packages/robot_kinematics
+[9.756s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/cmake/robot_kinematicsConfig.cmake
+[9.757s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/cmake/robot_kinematicsConfig-version.cmake
+[9.757s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.xml
+[9.757s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_kinematics

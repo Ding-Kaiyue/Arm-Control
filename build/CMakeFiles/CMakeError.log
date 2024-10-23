@@ -1,0 +1,1764 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_13b0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_13b0f.dir/build.make CMakeFiles/cmTC_13b0f.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_13b0f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_13b0f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_13b0f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_13b0f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_13b0f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_13b0f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_13b0f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_13b0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13b0f.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_13b0f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_13b0f 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_13b0f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_13b0f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_13b0f.dir/build.make:100: cmTC_13b0f] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_13b0f/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f14d6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f14d6.dir/build.make CMakeFiles/cmTC_f14d6.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f14d6.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_f14d6.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_f14d6.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_f14d6.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_f14d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f14d6.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_f14d6.dir/testCXXCompiler.cxx.o -o cmTC_f14d6 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_f14d6.dir/build.make:100: cmTC_f14d6] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f14d6/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e0704/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e0704.dir/build.make CMakeFiles/cmTC_e0704.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e0704.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_e0704.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e0704.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e0704.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_e0704.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_e0704.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e0704.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_e0704
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0704.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_e0704.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e0704 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e0704 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_e0704.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_e0704.dir/build.make:100: cmTC_e0704] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e0704/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2a55a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2a55a.dir/build.make CMakeFiles/cmTC_2a55a.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2a55a.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_2a55a.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_2a55a.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_2a55a.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_2a55a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a55a.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_2a55a.dir/testCXXCompiler.cxx.o -o cmTC_2a55a 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_2a55a.dir/build.make:100: cmTC_2a55a] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2a55a/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5c570/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5c570.dir/build.make CMakeFiles/cmTC_5c570.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5c570.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_5c570.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5c570.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5c570.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_5c570.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_5c570.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5c570.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_5c570
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c570.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_5c570.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5c570 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5c570 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_5c570.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_5c570.dir/build.make:100: cmTC_5c570] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5c570/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_37a58/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_37a58.dir/build.make CMakeFiles/cmTC_37a58.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37a58.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_37a58.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_37a58.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_37a58.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_37a58
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37a58.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_37a58.dir/testCXXCompiler.cxx.o -o cmTC_37a58 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_37a58.dir/build.make:100: cmTC_37a58] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_37a58/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_001d8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_001d8.dir/build.make CMakeFiles/cmTC_001d8.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_001d8.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_001d8.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_001d8.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_001d8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_001d8.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_001d8.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_001d8.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_001d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_001d8.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_001d8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_001d8 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_001d8 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_001d8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_001d8.dir/build.make:100: cmTC_001d8] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_001d8/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c974b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c974b.dir/build.make CMakeFiles/cmTC_c974b.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c974b.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_c974b.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_c974b.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_c974b.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c974b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c974b.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_c974b.dir/testCXXCompiler.cxx.o -o cmTC_c974b 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_c974b.dir/build.make:100: cmTC_c974b] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c974b/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2a293/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2a293.dir/build.make CMakeFiles/cmTC_2a293.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2a293.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_2a293.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_2a293.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_2a293.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_2a293.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_2a293.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2a293.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_2a293
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a293.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_2a293.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2a293 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2a293 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_2a293.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_2a293.dir/build.make:100: cmTC_2a293] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2a293/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3f1f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3f1f4.dir/build.make CMakeFiles/cmTC_3f1f4.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3f1f4.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_3f1f4.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_3f1f4.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_3f1f4.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_3f1f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f1f4.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_3f1f4.dir/testCXXCompiler.cxx.o -o cmTC_3f1f4 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_3f1f4.dir/build.make:100: cmTC_3f1f4] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_3f1f4/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bc0fc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bc0fc.dir/build.make CMakeFiles/cmTC_bc0fc.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bc0fc.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_bc0fc.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_bc0fc.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_bc0fc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_bc0fc.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_bc0fc.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_bc0fc.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_bc0fc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc0fc.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_bc0fc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bc0fc 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_bc0fc /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_bc0fc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_bc0fc.dir/build.make:100: cmTC_bc0fc] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_bc0fc/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3966d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3966d.dir/build.make CMakeFiles/cmTC_3966d.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3966d.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_3966d.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_3966d.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_3966d.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_3966d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3966d.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_3966d.dir/testCXXCompiler.cxx.o -o cmTC_3966d 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_3966d.dir/build.make:100: cmTC_3966d] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_3966d/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5c57d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5c57d.dir/build.make CMakeFiles/cmTC_5c57d.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5c57d.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_5c57d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5c57d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5c57d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_5c57d.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_5c57d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5c57d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_5c57d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c57d.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_5c57d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5c57d 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_5c57d /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_5c57d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_5c57d.dir/build.make:100: cmTC_5c57d] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5c57d/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a0668/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a0668.dir/build.make CMakeFiles/cmTC_a0668.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a0668.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_a0668.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_a0668.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_a0668.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_a0668
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0668.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_a0668.dir/testCXXCompiler.cxx.o -o cmTC_a0668 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_a0668.dir/build.make:100: cmTC_a0668] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a0668/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b4a7f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b4a7f.dir/build.make CMakeFiles/cmTC_b4a7f.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b4a7f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_b4a7f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b4a7f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b4a7f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_b4a7f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_b4a7f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b4a7f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_b4a7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4a7f.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_b4a7f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b4a7f 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b4a7f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_b4a7f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_b4a7f.dir/build.make:100: cmTC_b4a7f] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b4a7f/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eea99/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eea99.dir/build.make CMakeFiles/cmTC_eea99.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eea99.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_eea99.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_eea99.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_eea99.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_eea99
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eea99.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_eea99.dir/testCXXCompiler.cxx.o -o cmTC_eea99 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_eea99.dir/build.make:100: cmTC_eea99] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_eea99/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cb3d4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cb3d4.dir/build.make CMakeFiles/cmTC_cb3d4.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cb3d4.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_cb3d4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_cb3d4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_cb3d4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_cb3d4.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_cb3d4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cb3d4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_cb3d4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb3d4.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_cb3d4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cb3d4 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cb3d4 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_cb3d4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_cb3d4.dir/build.make:100: cmTC_cb3d4] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_cb3d4/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_afe31/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_afe31.dir/build.make CMakeFiles/cmTC_afe31.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_afe31.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_afe31.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_afe31.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_afe31.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_afe31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afe31.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_afe31.dir/testCXXCompiler.cxx.o -o cmTC_afe31 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_afe31.dir/build.make:100: cmTC_afe31] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_afe31/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_badba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_badba.dir/build.make CMakeFiles/cmTC_badba.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_badba.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_badba.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_badba.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_badba.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_badba.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_badba.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_badba.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_badba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_badba.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_badba.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_badba 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_badba /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_badba.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_badba.dir/build.make:100: cmTC_badba] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_badba/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_17163/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_17163.dir/build.make CMakeFiles/cmTC_17163.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_17163.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_17163.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_17163.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_17163.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_17163
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17163.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_17163.dir/testCXXCompiler.cxx.o -o cmTC_17163 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_17163.dir/build.make:100: cmTC_17163] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_17163/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_52daf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_52daf.dir/build.make CMakeFiles/cmTC_52daf.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_52daf.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_52daf.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_52daf.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_52daf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_52daf.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_52daf.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_52daf.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_52daf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52daf.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_52daf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_52daf 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_52daf /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_52daf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_52daf.dir/build.make:100: cmTC_52daf] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_52daf/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c60f3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c60f3.dir/build.make CMakeFiles/cmTC_c60f3.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c60f3.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_c60f3.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_c60f3.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_c60f3.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c60f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c60f3.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_c60f3.dir/testCXXCompiler.cxx.o -o cmTC_c60f3 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_c60f3.dir/build.make:100: cmTC_c60f3] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c60f3/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a8c43/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a8c43.dir/build.make CMakeFiles/cmTC_a8c43.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a8c43.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_a8c43.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_a8c43.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_a8c43.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_a8c43.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_a8c43.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a8c43.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_a8c43
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8c43.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_a8c43.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a8c43 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a8c43 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_a8c43.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_a8c43.dir/build.make:100: cmTC_a8c43] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a8c43/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7fd34/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7fd34.dir/build.make CMakeFiles/cmTC_7fd34.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7fd34.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_7fd34.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_7fd34.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_7fd34.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_7fd34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fd34.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_7fd34.dir/testCXXCompiler.cxx.o -o cmTC_7fd34 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_7fd34.dir/build.make:100: cmTC_7fd34] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7fd34/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_74c4c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_74c4c.dir/build.make CMakeFiles/cmTC_74c4c.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_74c4c.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_74c4c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_74c4c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_74c4c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_74c4c.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_74c4c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_74c4c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_74c4c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74c4c.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_74c4c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_74c4c 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_74c4c /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_74c4c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_74c4c.dir/build.make:100: cmTC_74c4c] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_74c4c/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d7160/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d7160.dir/build.make CMakeFiles/cmTC_d7160.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d7160.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_d7160.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_d7160.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_d7160.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_d7160
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7160.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_d7160.dir/testCXXCompiler.cxx.o -o cmTC_d7160 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_d7160.dir/build.make:100: cmTC_d7160] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d7160/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8abb3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8abb3.dir/build.make CMakeFiles/cmTC_8abb3.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8abb3.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_8abb3.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_8abb3.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_8abb3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_8abb3.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_8abb3.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8abb3.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_8abb3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8abb3.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_8abb3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8abb3 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8abb3 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_8abb3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_8abb3.dir/build.make:100: cmTC_8abb3] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8abb3/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fbb67/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fbb67.dir/build.make CMakeFiles/cmTC_fbb67.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fbb67.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_fbb67.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_fbb67.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_fbb67.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_fbb67
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbb67.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_fbb67.dir/testCXXCompiler.cxx.o -o cmTC_fbb67 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_fbb67.dir/build.make:100: cmTC_fbb67] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_fbb67/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_30ba5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_30ba5.dir/build.make CMakeFiles/cmTC_30ba5.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_30ba5.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_30ba5.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_30ba5.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_30ba5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_30ba5.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_30ba5.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_30ba5.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_30ba5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30ba5.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_30ba5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_30ba5 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_30ba5 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_30ba5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_30ba5.dir/build.make:100: cmTC_30ba5] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_30ba5/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_45754/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_45754.dir/build.make CMakeFiles/cmTC_45754.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_45754.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_45754.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_45754.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_45754.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_45754
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45754.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_45754.dir/testCXXCompiler.cxx.o -o cmTC_45754 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_45754.dir/build.make:100: cmTC_45754] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_45754/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f579c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f579c.dir/build.make CMakeFiles/cmTC_f579c.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f579c.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_f579c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f579c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f579c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_f579c.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_f579c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f579c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_f579c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f579c.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_f579c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f579c 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f579c /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f579c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_f579c.dir/build.make:100: cmTC_f579c] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f579c/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dad76/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dad76.dir/build.make CMakeFiles/cmTC_dad76.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dad76.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_dad76.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_dad76.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_dad76.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_dad76
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dad76.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_dad76.dir/testCXXCompiler.cxx.o -o cmTC_dad76 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_dad76.dir/build.make:100: cmTC_dad76] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_dad76/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f89b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f89b0.dir/build.make CMakeFiles/cmTC_f89b0.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f89b0.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_f89b0.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f89b0.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f89b0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_f89b0.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_f89b0.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f89b0.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_f89b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f89b0.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_f89b0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f89b0 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f89b0 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f89b0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_f89b0.dir/build.make:100: cmTC_f89b0] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f89b0/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cecf7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cecf7.dir/build.make CMakeFiles/cmTC_cecf7.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cecf7.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_cecf7.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_cecf7.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_cecf7.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_cecf7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cecf7.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_cecf7.dir/testCXXCompiler.cxx.o -o cmTC_cecf7 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_cecf7.dir/build.make:100: cmTC_cecf7] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_cecf7/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e3c59/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e3c59.dir/build.make CMakeFiles/cmTC_e3c59.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e3c59.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_e3c59.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_e3c59.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_e3c59.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_e3c59.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_e3c59.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e3c59.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_e3c59
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3c59.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_e3c59.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e3c59 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e3c59 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_e3c59.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_e3c59.dir/build.make:100: cmTC_e3c59] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e3c59/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1d613/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1d613.dir/build.make CMakeFiles/cmTC_1d613.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1d613.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_1d613.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_1d613.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_1d613.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_1d613
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d613.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_1d613.dir/testCXXCompiler.cxx.o -o cmTC_1d613 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_1d613.dir/build.make:100: cmTC_1d613] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1d613/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7acf4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7acf4.dir/build.make CMakeFiles/cmTC_7acf4.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7acf4.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_7acf4.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7acf4.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7acf4.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_7acf4.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_7acf4.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7acf4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_7acf4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7acf4.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_7acf4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7acf4 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7acf4 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_7acf4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_7acf4.dir/build.make:100: cmTC_7acf4] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7acf4/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_46618/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46618.dir/build.make CMakeFiles/cmTC_46618.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_46618.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_46618.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_46618.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_46618.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_46618
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46618.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_46618.dir/testCXXCompiler.cxx.o -o cmTC_46618 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_46618.dir/build.make:100: cmTC_46618] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_46618/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_302e9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_302e9.dir/build.make CMakeFiles/cmTC_302e9.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_302e9.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_302e9.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_302e9.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_302e9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_302e9.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_302e9.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_302e9.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_302e9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_302e9.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_302e9.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_302e9 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_302e9 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_302e9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_302e9.dir/build.make:100: cmTC_302e9] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_302e9/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1e99a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1e99a.dir/build.make CMakeFiles/cmTC_1e99a.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1e99a.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_1e99a.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_1e99a.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_1e99a.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_1e99a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e99a.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_1e99a.dir/testCXXCompiler.cxx.o -o cmTC_1e99a 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_1e99a.dir/build.make:100: cmTC_1e99a] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1e99a/fast] Error 2
+
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/clang++-14 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_71a86/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_71a86.dir/build.make CMakeFiles/cmTC_71a86.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_71a86.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++-14   -v -MD -MT CMakeFiles/cmTC_71a86.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_71a86.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_71a86.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ (in-process)
+ "/usr/lib/llvm-14/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/llvm-14/lib/clang/14.0.0 -dependency-file CMakeFiles/cmTC_71a86.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_71a86.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++ -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward -internal-isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_71a86.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.0 based upon LLVM 14.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/backward"
+ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++
+ /usr/lib/llvm-14/lib/clang/14.0.0/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_71a86
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71a86.dir/link.txt --verbose=1
+/usr/bin/clang++-14  -v CMakeFiles/cmTC_71a86.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_71a86 
+Ubuntu clang version 14.0.0-1ubuntu1.1
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda, version 
+ "/usr/bin/ld" -pie --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_71a86 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/llvm-14/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_71a86.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/12/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_71a86.dir/build.make:100: cmTC_71a86] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_71a86/fast] Error 2
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e3d63/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e3d63.dir/build.make CMakeFiles/cmTC_e3d63.dir/build
+gmake[1]: Entering directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e3d63.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++-14    -MD -MT CMakeFiles/cmTC_e3d63.dir/testCXXCompiler.cxx.o -MF CMakeFiles/cmTC_e3d63.dir/testCXXCompiler.cxx.o.d -o CMakeFiles/cmTC_e3d63.dir/testCXXCompiler.cxx.o -c /home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_e3d63
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3d63.dir/link.txt --verbose=1
+/usr/bin/clang++-14 CMakeFiles/cmTC_e3d63.dir/testCXXCompiler.cxx.o -o cmTC_e3d63 
+/usr/bin/ld: cannot find -lstdc++: No such file or directory
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_e3d63.dir/build.make:100: cmTC_e3d63] Error 1
+gmake[1]: Leaving directory '/home/dky/Projects/dky_robot/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e3d63/fast] Error 2
+
+
+

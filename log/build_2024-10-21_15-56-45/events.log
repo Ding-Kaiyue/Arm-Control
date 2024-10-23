@@ -1,0 +1,331 @@
+[0.000000] (-) TimerEvent: {}
+[0.000194] (-) JobUnselected: {'identifier': 'robot_bringup'}
+[0.000285] (-) JobUnselected: {'identifier': 'robot_cartesian'}
+[0.000315] (-) JobUnselected: {'identifier': 'robot_config'}
+[0.000343] (-) JobUnselected: {'identifier': 'robot_control'}
+[0.000368] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.000534] (-) JobUnselected: {'identifier': 'robot_driver'}
+[0.000617] (-) JobUnselected: {'identifier': 'robot_gazebo'}
+[0.000632] (-) JobUnselected: {'identifier': 'robot_kinematics'}
+[0.000643] (-) JobUnselected: {'identifier': 'robot_qtrecv'}
+[0.000654] (robot_interfaces) JobQueued: {'identifier': 'robot_interfaces', 'dependencies': OrderedDict()}
+[0.000666] (robot_interfaces) JobStarted: {'identifier': 'robot_interfaces'}
+[0.006132] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'cmake'}
+[0.006498] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'build'}
+[0.006941] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dky/Projects/dky_robot/build/robot_interfaces', '--', '-j20', '-l20'], 'cwd': '/home/dky/Projects/dky_robot/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'dky'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('STM32CubeMX_PATH', '/home/dky/Softwares/STM32CubeMX/CubeMx'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('VREP_ROOT', '/home/dky/Bags/VREP'), ('HOME', '/home/dky'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2182'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d78b2fc9de5dad2f301216e46715fab1'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dky'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dky'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dky/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dky/.fishros/bin/'), ('SESSION_MANAGER', 'local/dky-Legion-Y7000P-IRH8:@/tmp/.ICE-unix/2182,unix/dky-Legion-Y7000P-IRH8:/tmp/.ICE-unix/2182'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/53d5efc3_d198_4044_aa5b_8bdb16660a6e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dky/Projects/dky_robot/build/robot_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d78b2fc9de5dad2f301216e46715fab1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.026465] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099449] (-) TimerEvent: {}
+[0.110522] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.111486] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.113333] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.134394] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.151335] (robot_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.199620] (-) TimerEvent: {}
+[0.230367] (robot_interfaces) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.298545] (robot_interfaces) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.299346] (robot_interfaces) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299678] (-) TimerEvent: {}
+[0.385877] (robot_interfaces) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.399795] (-) TimerEvent: {}
+[0.500222] (-) TimerEvent: {}
+[0.600692] (-) TimerEvent: {}
+[0.654812] (robot_interfaces) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.6 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.657618] (robot_interfaces) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.658502] (robot_interfaces) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.700929] (-) TimerEvent: {}
+[0.801320] (-) TimerEvent: {}
+[0.890635] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.901505] (-) TimerEvent: {}
+[1.001905] (-) TimerEvent: {}
+[1.097965] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.102033] (-) TimerEvent: {}
+[1.202424] (-) TimerEvent: {}
+[1.302821] (-) TimerEvent: {}
+[1.371070] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.391530] (robot_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.403038] (-) TimerEvent: {}
+[1.407898] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.408092] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.408182] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.436132] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.451175] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.452110] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.453863] (robot_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.491577] (robot_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.493854] (robot_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/dky/Projects/dky_robot/build/robot_interfaces\n'}
+[1.503133] (-) TimerEvent: {}
+[1.514590] (robot_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.520448] (robot_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.533690] (robot_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_robot_interfaces\n'}
+[1.603243] (-) TimerEvent: {}
+[1.692605] (robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.693119] (robot_interfaces) StdoutLine: {'line': b'writing robot_interfaces.egg-info/PKG-INFO\n'}
+[1.693223] (robot_interfaces) StdoutLine: {'line': b'writing dependency_links to robot_interfaces.egg-info/dependency_links.txt\n'}
+[1.693314] (robot_interfaces) StdoutLine: {'line': b'writing top-level names to robot_interfaces.egg-info/top_level.txt\n'}
+[1.695218] (robot_interfaces) StdoutLine: {'line': b"reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[1.695916] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[1.703362] (-) TimerEvent: {}
+[1.715417] (robot_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_robot_interfaces_egg\n'}
+[1.766789] (robot_interfaces) StdoutLine: {'line': b'[  4%] Built target robot_interfaces__cpp\n'}
+[1.774426] (robot_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.776861] (robot_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.777070] (robot_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.795306] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_generator_c\x1b[0m\n'}
+[1.803448] (-) TimerEvent: {}
+[1.808384] (robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/qt_recv__functions.c.o\x1b[0m\n'}
+[1.808582] (robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/arm_state__functions.c.o\x1b[0m\n'}
+[1.808682] (robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/line_msg__functions.c.o\x1b[0m\n'}
+[1.900213] (robot_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.903533] (-) TimerEvent: {}
+[1.937589] (robot_interfaces) StdoutLine: {'line': b'[ 19%] Built target robot_interfaces__rosidl_generator_c\n'}
+[1.944491] (robot_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.944719] (robot_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.945037] (robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.990263] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.998874] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.999164] (robot_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/line_msg__type_support.cpp.o\x1b[0m\n'}
+[1.999307] (robot_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/arm_state__type_support.cpp.o\x1b[0m\n'}
+[2.000296] (robot_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/qt_recv__type_support.cpp.o\x1b[0m\n'}
+[2.003613] (-) TimerEvent: {}
+[2.010253] (robot_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/qt_recv__type_support.cpp.o\x1b[0m\n'}
+[2.010479] (robot_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/arm_state__type_support.cpp.o\x1b[0m\n'}
+[2.010667] (robot_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/line_msg__type_support.cpp.o\x1b[0m\n'}
+[2.069786] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.080874] (robot_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/line_msg__type_support.cpp.o\x1b[0m\n'}
+[2.081212] (robot_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/qt_recv__type_support.cpp.o\x1b[0m\n'}
+[2.081595] (robot_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/arm_state__type_support.cpp.o\x1b[0m\n'}
+[2.103708] (-) TimerEvent: {}
+[2.203982] (-) TimerEvent: {}
+[2.206346] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.213320] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.217393] (robot_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/line_msg__type_support_c.cpp.o\x1b[0m\n'}
+[2.217808] (robot_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/qt_recv__type_support_c.cpp.o\x1b[0m\n'}
+[2.218034] (robot_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/arm_state__type_support_c.cpp.o\x1b[0m\n'}
+[2.225159] (robot_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/qt_recv__type_support.c.o\x1b[0m\n'}
+[2.225601] (robot_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/line_msg__type_support.c.o\x1b[0m\n'}
+[2.225917] (robot_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/arm_state__type_support.c.o\x1b[0m\n'}
+[2.268047] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[2.270896] (robot_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.278321] (robot_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/qt_recv__type_support.cpp.o\x1b[0m\n'}
+[2.278909] (robot_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/line_msg__type_support.cpp.o\x1b[0m\n'}
+[2.279196] (robot_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/arm_state__type_support.cpp.o\x1b[0m\n'}
+[2.304103] (-) TimerEvent: {}
+[2.305297] (robot_interfaces) StdoutLine: {'line': b'[ 65%] Built target robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[2.307302] (robot_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.341680] (robot_interfaces) StdoutLine: {'line': b'[ 68%] Built target robot_interfaces__rosidl_typesupport_c\n'}
+[2.364910] (robot_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.399560] (robot_interfaces) StdoutLine: {'line': b'[ 70%] Built target robot_interfaces__rosidl_typesupport_cpp\n'}
+[2.404213] (-) TimerEvent: {}
+[2.455897] (robot_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.467540] (robot_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.484975] (robot_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.504351] (-) TimerEvent: {}
+[2.513799] (robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[2.526917] (robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[2.539554] (robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[2.558527] (robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target robot_interfaces\n'}
+[2.577413] (robot_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.604448] (-) TimerEvent: {}
+[2.704762] (-) TimerEvent: {}
+[2.805090] (-) TimerEvent: {}
+[2.905468] (-) TimerEvent: {}
+[2.954641] (robot_interfaces) StdoutLine: {'line': b'[ 78%] Built target robot_interfaces__py\n'}
+[2.963868] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_generator_py\x1b[0m\n'}
+[2.976847] (robot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_qt_recv_s.c.o\x1b[0m\n'}
+[2.977128] (robot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_line_msg_s.c.o\x1b[0m\n'}
+[2.977283] (robot_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_arm_state_s.c.o\x1b[0m\n'}
+[3.005571] (-) TimerEvent: {}
+[3.057594] (robot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[3.091285] (robot_interfaces) StdoutLine: {'line': b'[ 87%] Built target robot_interfaces__rosidl_generator_py\n'}
+[3.101611] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.101792] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.101856] (robot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.105631] (-) TimerEvent: {}
+[3.113963] (robot_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.114372] (robot_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.114613] (robot_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.181288] (robot_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.200277] (robot_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.205734] (-) TimerEvent: {}
+[3.215865] (robot_interfaces) StdoutLine: {'line': b'[ 97%] Built target robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[3.219754] (robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.228271] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.248815] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[3.257135] (robot_interfaces) CommandEnded: {'returncode': 0}
+[3.305809] (-) TimerEvent: {}
+[3.343426] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'install'}
+[3.350557] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dky/Projects/dky_robot/build/robot_interfaces'], 'cwd': '/home/dky/Projects/dky_robot/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890'), ('no_proxy', 'localhost,127.0.0.0/8,::1'), ('USER', 'dky'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('STM32CubeMX_PATH', '/home/dky/Softwares/STM32CubeMX/CubeMx'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('VREP_ROOT', '/home/dky/Bags/VREP'), ('HOME', '/home/dky'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.0/8,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2182'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d78b2fc9de5dad2f301216e46715fab1'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'dky'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'dky'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/dky/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dky/.fishros/bin/'), ('SESSION_MANAGER', 'local/dky-Legion-Y7000P-IRH8:@/tmp/.ICE-unix/2182,unix/dky-Legion-Y7000P-IRH8:/tmp/.ICE-unix/2182'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/53d5efc3_d198_4044_aa5b_8bdb16660a6e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/dky/Projects/dky_robot/build/robot_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d78b2fc9de5dad2f301216e46715fab1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.357818] (robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.358008] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/robot_interfaces\n'}
+[3.358168] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[3.358268] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[3.358460] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[3.358719] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__struct.h\n'}
+[3.358851] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__functions.c\n'}
+[3.358965] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__functions.c\n'}
+[3.359056] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__type_support.h\n'}
+[3.359158] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__struct.h\n'}
+[3.359244] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__type_support.h\n'}
+[3.359328] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__functions.h\n'}
+[3.359418] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__functions.h\n'}
+[3.359509] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__struct.h\n'}
+[3.359612] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__type_support.h\n'}
+[3.359694] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__functions.h\n'}
+[3.359800] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__functions.c\n'}
+[3.359914] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.360033] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/qt_recv.h\n'}
+[3.360116] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/arm_state.h\n'}
+[3.360198] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/line_msg.h\n'}
+[3.360279] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/library_path.sh\n'}
+[3.360377] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/library_path.dsv\n'}
+[3.360622] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so\n'}
+[3.360849] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so" to ""\n'}
+[3.360994] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[3.361102] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[3.361197] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[3.361309] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__rosidl_typesupport_fastrtps_c.h\n'}
+[3.361444] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__rosidl_typesupport_fastrtps_c.h\n'}
+[3.361550] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[3.361667] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.361757] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[3.361852] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.362134] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[3.362310] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[3.362481] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[3.362632] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__rosidl_typesupport_introspection_c.h\n'}
+[3.362747] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__type_support.c\n'}
+[3.362875] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__type_support.c\n'}
+[3.362958] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__rosidl_typesupport_introspection_c.h\n'}
+[3.363038] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__type_support.c\n'}
+[3.363117] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__rosidl_typesupport_introspection_c.h\n'}
+[3.363197] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.363286] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[3.363375] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.363497] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so\n'}
+[3.363578] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[3.363660] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[3.363773] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[3.363858] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[3.364004] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__struct.hpp\n'}
+[3.364091] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__struct.hpp\n'}
+[3.364180] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__traits.hpp\n'}
+[3.364306] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__builder.hpp\n'}
+[3.364410] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__traits.hpp\n'}
+[3.364501] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__builder.hpp\n'}
+[3.364588] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__traits.hpp\n'}
+[3.364694] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__struct.hpp\n'}
+[3.364819] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__builder.hpp\n'}
+[3.364904] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/line_msg.hpp\n'}
+[3.364985] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/arm_state.hpp\n'}
+[3.365067] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/qt_recv.hpp\n'}
+[3.365147] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[3.365226] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[3.365307] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[3.365389] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.365511] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.365572] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.365610] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/dds_fastrtps\n'}
+[3.365644] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.365676] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.365708] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.365741] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[3.365773] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[3.365803] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[3.365834] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.365916] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__type_support.cpp\n'}
+[3.365950] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.365982] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/qt_recv__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.366016] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/line_msg__type_support.cpp\n'}
+[3.366049] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/arm_state__type_support.cpp\n'}
+[3.366081] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[3.366365] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.366772] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so\n'}
+[3.367115] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[3.367207] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.sh\n'}
+[3.367265] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.dsv\n'}
+[3.367411] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info\n'}
+[3.367473] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.367603] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.367738] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.367877] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.368053] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces\n'}
+[3.368111] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.368277] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\n'}
+[3.368472] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg\n'}
+[3.368627] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_line_msg_s.c\n'}
+[3.368761] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_arm_state_s.c\n'}
+[3.368877] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_arm_state.py\n'}
+[3.369003] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_qt_recv.py\n'}
+[3.369124] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py\n'}
+[3.369331] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_line_msg.py\n'}
+[3.369508] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_qt_recv_s.c\n'}
+[3.369673] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[3.369801] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py\n'}
+[3.369917] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.370080] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.370233] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.370442] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.398183] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces'...\n"}
+[3.398367] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py'...\n"}
+[3.398473] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg'...\n"}
+[3.398560] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py'...\n"}
+[3.398644] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_arm_state.py'...\n"}
+[3.398726] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_line_msg.py'...\n"}
+[3.398811] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_qt_recv.py'...\n"}
+[3.401491] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.401696] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.401821] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.401958] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.402067] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.402201] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.402867] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so\n'}
+[3.403033] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so" to ""\n'}
+[3.403149] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/QtRecv.idl\n'}
+[3.403269] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/LineMsg.idl\n'}
+[3.403382] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/ArmState.idl\n'}
+[3.403523] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/QtRecv.msg\n'}
+[3.403632] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/LineMsg.msg\n'}
+[3.403753] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/msg/ArmState.msg\n'}
+[3.403835] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/ament_index/resource_index/package_run_dependencies/robot_interfaces\n'}
+[3.403915] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/ament_index/resource_index/parent_prefix_path/robot_interfaces\n'}
+[3.404035] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.sh\n'}
+[3.404117] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[3.404197] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/path.sh\n'}
+[3.404277] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/environment/path.dsv\n'}
+[3.404393] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/local_setup.bash\n'}
+[3.404530] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/local_setup.sh\n'}
+[3.404608] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/local_setup.zsh\n'}
+[3.404687] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/local_setup.dsv\n'}
+[3.404821] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.dsv\n'}
+[3.404929] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/ament_index/resource_index/packages/robot_interfaces\n'}
+[3.405007] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[3.405088] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.405169] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.405328] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.405408] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.405491] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.405568] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[3.405644] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.405720] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[3.405795] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.405878] (-) TimerEvent: {}
+[3.405995] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.406082] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.406160] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.406240] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[3.406352] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.406547] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[3.406601] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.406715] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[3.406750] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.406782] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.406813] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.406845] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.406875] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.406905] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.406934] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig.cmake\n'}
+[3.406964] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig-version.cmake\n'}
+[3.406994] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.xml\n'}
+[3.407340] (robot_interfaces) CommandEnded: {'returncode': 0}
+[3.505122] (robot_interfaces) JobEnded: {'identifier': 'robot_interfaces', 'rc': 0}
+[3.505564] (-) EventReactorShutdown: {}

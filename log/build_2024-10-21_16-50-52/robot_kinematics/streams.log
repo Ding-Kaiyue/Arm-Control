@@ -1,0 +1,52 @@
+[0.036s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_kinematics': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_kinematics -- -j20 -l20
+[0.082s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.210s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.233s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.235s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.239s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.246s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.257s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.298s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.299s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.412s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.529s] -- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.542s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.144s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.152s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.163s] -- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.200s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.234s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.345s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.706s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[2.084s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[2.258s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[2.552s] -- Found robot_interfaces: 0.0.0 (/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake)
+[2.602s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.651s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.651s] -- Configured cppcheck include dirs: 
+[2.651s] -- Configured cppcheck exclude dirs and/or files: 
+[2.651s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.652s] -- Added test 'lint_cmake' to check CMake code style
+[2.652s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.652s] -- Added test 'uncrustify' to check C / C++ code style
+[2.652s] -- Configured uncrustify additional arguments: 
+[2.652s] -- Added test 'xmllint' to check XML markup files
+[2.652s] -- Configuring done
+[2.711s] -- Generating done
+[2.713s] -- Build files have been written to: /home/dky/Projects/dky_robot/build/robot_kinematics
+[2.739s] [35m[1mConsolidate compiler generated dependencies of target robot_ik[0m
+[2.741s] [35m[1mConsolidate compiler generated dependencies of target robot_fk[0m
+[2.742s] [35m[1mConsolidate compiler generated dependencies of target robot_func[0m
+[2.742s] [35m[1mConsolidate compiler generated dependencies of target robot_state_get[0m
+[2.757s] [ 12%] [32mBuilding CXX object CMakeFiles/robot_ik.dir/src/robot_ik.cpp.o[0m
+[2.760s] [ 25%] [32mBuilding CXX object CMakeFiles/robot_func.dir/src/robot_func.cpp.o[0m
+[2.761s] [ 37%] [32mBuilding CXX object CMakeFiles/robot_state_get.dir/src/robot_state_get.cpp.o[0m
+[2.762s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_fk.dir/src/robot_fk.cpp.o[0m
+[5.845s] [ 62%] [32m[1mLinking CXX executable robot_state_get[0m
+[6.387s] [ 62%] Built target robot_state_get
+[8.198s] [ 75%] [32m[1mLinking CXX executable robot_func[0m
+[8.466s] [ 75%] Built target robot_func
+[11.223s] [ 87%] [32m[1mLinking CXX executable robot_ik[0m
+[11.702s] [ 87%] Built target robot_ik
+[13.547s] [100%] [32m[1mLinking CXX executable robot_fk[0m
+[14.115s] [100%] Built target robot_fk

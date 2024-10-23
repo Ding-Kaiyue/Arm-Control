@@ -1,0 +1,69 @@
+-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+-- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+-- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+-- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dky/Projects/dky_robot/build/robot_kinematics
+[35m[1mConsolidate compiler generated dependencies of target robot_fk[0m
+[35m[1mConsolidate compiler generated dependencies of target robot_ik[0m
+[35m[1mConsolidate compiler generated dependencies of target robot_state_get[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/robot_func.dir/src/robot_func.cpp.o[0m
+[ 37%] Built target robot_state_get
+[ 62%] Built target robot_fk
+[ 87%] Built target robot_ik
+[100%] [32m[1mLinking CXX executable robot_func[0m
+[100%] Built target robot_func
+-- Install configuration: ""
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_ik
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_fk
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_state_get
+-- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_func
+-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_kinematics/lib/robot_kinematics/robot_func" to ""
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch/robot_state_get.launch.py
+-- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch/robot_func.launch.py
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch/robot_ik.launch.py
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/launch/robot_fk.launch.py
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/ament_index/resource_index/package_run_dependencies/robot_kinematics
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/ament_index/resource_index/parent_prefix_path/robot_kinematics
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/environment/ament_prefix_path.sh
+-- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/environment/path.sh
+-- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/environment/path.dsv
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/local_setup.bash
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/local_setup.sh
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/local_setup.zsh
+-- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/local_setup.dsv
+-- Installing: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.dsv
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/ament_index/resource_index/packages/robot_kinematics
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/cmake/robot_kinematicsConfig.cmake
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/cmake/robot_kinematicsConfig-version.cmake
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.xml

@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target robot_state_get[0m
+[35m[1mConsolidate compiler generated dependencies of target robot_ik[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/robot_func.dir/src/robot_func.cpp.o[0m
+[ 50%] Built target robot_state_get
+[ 83%] Built target robot_ik
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_func.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kmoveit/move_group_interface/move_group_interface.h: No such file or directory
+    6 | #include [01;31m[K<moveit/move_group_interface/move_group_interface.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robot_func.dir/build.make:76: CMakeFiles/robot_func.dir/src/robot_func.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/robot_func.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

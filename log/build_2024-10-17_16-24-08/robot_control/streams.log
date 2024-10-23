@@ -1,0 +1,24 @@
+[0.029s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_control -- -j20 -l20
+[0.106s] [100%] Built target robot_control
+[0.135s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_control -- -j20 -l20
+[0.181s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_control
+[0.189s] -- Install configuration: ""
+[0.193s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/launch
+[0.194s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/launch/robot_control.launch.py
+[0.194s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/lib/robot_control/robot_control
+[0.195s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/ament_index/resource_index/package_run_dependencies/robot_control
+[0.195s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/ament_index/resource_index/parent_prefix_path/robot_control
+[0.196s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/environment/ament_prefix_path.sh
+[0.196s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/environment/ament_prefix_path.dsv
+[0.196s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/environment/path.sh
+[0.196s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/environment/path.dsv
+[0.197s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/local_setup.bash
+[0.198s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/local_setup.sh
+[0.199s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/local_setup.zsh
+[0.199s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/local_setup.dsv
+[0.200s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.dsv
+[0.200s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/ament_index/resource_index/packages/robot_control
+[0.201s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/cmake/robot_controlConfig.cmake
+[0.201s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/cmake/robot_controlConfig-version.cmake
+[0.202s] -- Up-to-date: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.xml
+[0.233s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_control

@@ -1,0 +1,745 @@
+[0.110s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.110s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x74fe74a5f5e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74fe74a5f0d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74fe74a5f0d0>>, mixin_verb=('build',))
+[0.257s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.257s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.258s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dky/Projects/dky_robot'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme) by extension 'python_setup_py'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(readme/img) by extension 'python_setup_py'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cartesian) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cartesian) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cartesian) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cartesian) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cartesian) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cartesian) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cartesian) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cartesian) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_cartesian) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_cartesian' with type 'ros.ament_cmake' and name 'robot_cartesian'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_config) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_config) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_config) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_config) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_config) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_config) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_config) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_config) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_config) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_config' with type 'ros.ament_cmake' and name 'robot_config'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ros'
+[0.271s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_control' with type 'ros.ament_cmake' and name 'robot_control'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_cmake' and name 'robot_description'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_driver) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_driver) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_driver) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_driver) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_driver) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_driver) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_driver) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_driver) by extension 'ros'
+[0.273s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_driver' with type 'ros.ament_cmake' and name 'robot_driver'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gazebo) by extension 'ignore'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gazebo) by extension 'ignore_ament_install'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gazebo) by extensions ['colcon_pkg']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gazebo) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gazebo) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gazebo) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gazebo) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gazebo) by extension 'ros'
+[0.273s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_gazebo' with type 'ros.ament_cmake' and name 'robot_gazebo'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'colcon_pkg'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['colcon_meta']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'colcon_meta'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['ros']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_interfaces' with type 'ros.ament_cmake' and name 'robot_interfaces'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_kinematics) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_kinematics) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_kinematics) by extension 'ignore_ament_install'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_kinematics) by extensions ['colcon_pkg']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_kinematics) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_kinematics) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_kinematics) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_kinematics) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_kinematics) by extension 'ros'
+[0.275s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_kinematics' with type 'ros.ament_cmake' and name 'robot_kinematics'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_qtrecv) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_qtrecv) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_qtrecv) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_qtrecv) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_qtrecv) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_qtrecv) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_qtrecv) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_qtrecv) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_qtrecv) by extension 'ros'
+[0.276s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_qtrecv' with type 'ros.ament_cmake' and name 'robot_qtrecv'
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.303s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/dky/Projects/dky_robot/install
+[0.304s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 455 installed packages in /opt/ros/humble
+[0.305s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.338s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_bringup', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_cartesian' build argument 'cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_cartesian' build argument 'cmake_target' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_cartesian' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_cartesian' build argument 'cmake_clean_cache' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_cartesian' build argument 'cmake_clean_first' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_cartesian' build argument 'cmake_force_configure' from command line to 'False'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_cartesian' build argument 'ament_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_cartesian' build argument 'catkin_cmake_args' from command line to 'None'
+[0.338s] Level 5:colcon.colcon_core.verb:set package 'robot_cartesian' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.338s] DEBUG:colcon.colcon_core.verb:Building package 'robot_cartesian' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_cartesian', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_cartesian', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_cartesian', 'symlink_install': False, 'test_result_base': None}
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'robot_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_control', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_control', 'symlink_install': False, 'test_result_base': None}
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_description', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_description', 'symlink_install': False, 'test_result_base': None}
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_driver' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'robot_driver' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'robot_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_driver', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_driver', 'symlink_install': False, 'test_result_base': None}
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'robot_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_gazebo', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_interfaces', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_kinematics' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_kinematics' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_kinematics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_kinematics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_kinematics' build argument 'cmake_clean_first' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_kinematics' build argument 'cmake_force_configure' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_kinematics' build argument 'ament_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_kinematics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_kinematics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.341s] DEBUG:colcon.colcon_core.verb:Building package 'robot_kinematics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_kinematics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_kinematics', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_kinematics', 'symlink_install': False, 'test_result_base': None}
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_qtrecv' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_qtrecv' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_qtrecv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_qtrecv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_qtrecv' build argument 'cmake_clean_first' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_qtrecv' build argument 'cmake_force_configure' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_qtrecv' build argument 'ament_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_qtrecv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'robot_qtrecv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.341s] DEBUG:colcon.colcon_core.verb:Building package 'robot_qtrecv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_qtrecv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_qtrecv', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_qtrecv', 'symlink_install': False, 'test_result_base': None}
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_target' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'robot_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'robot_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dky/Projects/dky_robot/build/robot_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dky/Projects/dky_robot/install/robot_config', 'merge_install': False, 'path': '/home/dky/Projects/dky_robot/src/robot_config', 'symlink_install': False, 'test_result_base': None}
+[0.342s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.343s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.344s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_description' with build type 'ament_cmake'
+[0.344s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_description'
+[0.346s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.346s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.349s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_bringup' with build type 'ament_cmake'
+[0.349s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_bringup'
+[0.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.349s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.351s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_cartesian' with build type 'ament_cmake'
+[0.352s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_cartesian'
+[0.352s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.352s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.354s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_control' with build type 'ament_cmake'
+[0.354s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_control'
+[0.354s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.354s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.357s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_driver' with build type 'ament_cmake'
+[0.357s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_driver'
+[0.357s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.357s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.360s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_gazebo' with build type 'ament_cmake'
+[0.360s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_gazebo'
+[0.360s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.360s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.363s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_interfaces' with build type 'ament_cmake'
+[0.363s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_interfaces'
+[0.364s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.364s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.367s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_kinematics' with build type 'ament_cmake'
+[0.367s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_kinematics'
+[0.367s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.367s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.371s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_qtrecv' with build type 'ament_cmake'
+[0.371s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_qtrecv'
+[0.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_description -- -j20 -l20
+[0.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_bringup -- -j20 -l20
+[0.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_cartesian': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_cartesian -- -j20 -l20
+[0.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_control -- -j20 -l20
+[0.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_driver -- -j20 -l20
+[0.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_gazebo -- -j20 -l20
+[0.397s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_interfaces -- -j20 -l20
+[0.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_kinematics -- -j20 -l20
+[0.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_qtrecv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_qtrecv -- -j20 -l20
+[0.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_bringup -- -j20 -l20
+[0.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_description -- -j20 -l20
+[0.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_gazebo -- -j20 -l20
+[0.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_bringup
+[0.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_control -- -j20 -l20
+[0.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_description
+[0.477s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[0.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_driver -- -j20 -l20
+[0.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_gazebo
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup' for CMake module files
+[0.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_bringup
+[0.488s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup' for CMake config files
+[0.488s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[0.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[0.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup/bin'
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup/lib/python3.10/site-packages'
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup/bin'
+[0.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.ps1'
+[0.494s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.dsv'
+[0.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.sh'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.bash'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.zsh'
+[0.497s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[0.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_cartesian' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_cartesian -- -j20 -l20
+[0.501s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[0.501s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description' for CMake module files
+[0.503s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description' for CMake config files
+[0.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_description
+[0.505s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'cmake_prefix_path')
+[0.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/hook/cmake_prefix_path.ps1'
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/hook/cmake_prefix_path.dsv'
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/hook/cmake_prefix_path.sh'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description/bin'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description/lib/pkgconfig/robot_description.pc'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description/lib/python3.10/site-packages'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description/bin'
+[0.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.ps1'
+[0.508s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.dsv'
+[0.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.sh'
+[0.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.bash'
+[0.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.zsh'
+[0.508s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_description/share/colcon-core/packages/robot_description)
+[0.510s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_gazebo)
+[0.510s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo' for CMake module files
+[0.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_gazebo
+[0.511s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo' for CMake config files
+[0.511s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_gazebo', 'cmake_prefix_path')
+[0.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/hook/cmake_prefix_path.ps1'
+[0.511s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/hook/cmake_prefix_path.dsv'
+[0.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/hook/cmake_prefix_path.sh'
+[0.512s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo/bin'
+[0.512s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo/lib/pkgconfig/robot_gazebo.pc'
+[0.512s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo/lib/python3.10/site-packages'
+[0.512s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo/bin'
+[0.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.ps1'
+[0.513s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.dsv'
+[0.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.sh'
+[0.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.bash'
+[0.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.zsh'
+[0.514s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_gazebo/share/colcon-core/packages/robot_gazebo)
+[0.515s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_kinematics -- -j20 -l20
+[0.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_control
+[0.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_driver
+[0.521s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[0.521s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup' for CMake module files
+[0.523s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup' for CMake config files
+[0.526s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[0.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.ps1'
+[0.527s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[0.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[0.528s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup/bin'
+[0.528s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[0.528s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup/lib/python3.10/site-packages'
+[0.528s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_bringup/bin'
+[0.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.ps1'
+[0.530s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.dsv'
+[0.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.sh'
+[0.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.bash'
+[0.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_bringup/share/robot_bringup/package.zsh'
+[0.534s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[0.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_cartesian': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_cartesian
+[0.538s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description' for CMake module files
+[0.539s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description' for CMake config files
+[0.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'cmake_prefix_path')
+[0.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/hook/cmake_prefix_path.ps1'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/hook/cmake_prefix_path.dsv'
+[0.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/hook/cmake_prefix_path.sh'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description/bin'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description/lib/pkgconfig/robot_description.pc'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description/lib/python3.10/site-packages'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_description/bin'
+[0.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.ps1'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.dsv'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.sh'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.bash'
+[0.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_description/share/robot_description/package.zsh'
+[0.544s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_description/share/colcon-core/packages/robot_description)
+[0.544s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_gazebo)
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo' for CMake module files
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo' for CMake config files
+[0.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_gazebo', 'cmake_prefix_path')
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/hook/cmake_prefix_path.ps1'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/hook/cmake_prefix_path.dsv'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/hook/cmake_prefix_path.sh'
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo/bin'
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo/lib/pkgconfig/robot_gazebo.pc'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo/lib/python3.10/site-packages'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_gazebo/bin'
+[0.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.ps1'
+[0.547s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.dsv'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.sh'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.bash'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_gazebo/share/robot_gazebo/package.zsh'
+[0.548s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_gazebo/share/colcon-core/packages/robot_gazebo)
+[0.548s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_control)
+[0.549s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control' for CMake module files
+[0.549s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control' for CMake config files
+[0.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_control
+[0.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_control', 'cmake_prefix_path')
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/hook/cmake_prefix_path.ps1'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/hook/cmake_prefix_path.dsv'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/hook/cmake_prefix_path.sh'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/lib'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/bin'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/lib/pkgconfig/robot_control.pc'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/lib/python3.10/site-packages'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/bin'
+[0.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.ps1'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.dsv'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.sh'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.bash'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.zsh'
+[0.552s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_control/share/colcon-core/packages/robot_control)
+[0.553s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dky/Projects/dky_robot/src/robot_config' with build type 'ament_cmake'
+[0.553s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dky/Projects/dky_robot/src/robot_config'
+[0.554s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.554s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.557s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_driver)
+[0.558s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver' for CMake module files
+[0.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_driver
+[0.559s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver' for CMake config files
+[0.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_driver', 'cmake_prefix_path')
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/hook/cmake_prefix_path.ps1'
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/hook/cmake_prefix_path.dsv'
+[0.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/hook/cmake_prefix_path.sh'
+[0.562s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/lib'
+[0.562s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/bin'
+[0.562s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/lib/pkgconfig/robot_driver.pc'
+[0.562s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/lib/python3.10/site-packages'
+[0.563s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/bin'
+[0.563s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.ps1'
+[0.564s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.dsv'
+[0.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.sh'
+[0.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.bash'
+[0.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.zsh'
+[0.566s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_driver/share/colcon-core/packages/robot_driver)
+[0.567s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_cartesian)
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian' for CMake module files
+[0.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_cartesian' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_cartesian
+[0.569s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian' for CMake config files
+[0.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_cartesian', 'cmake_prefix_path')
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/hook/cmake_prefix_path.ps1'
+[0.570s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/hook/cmake_prefix_path.dsv'
+[0.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/hook/cmake_prefix_path.sh'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/lib'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/bin'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/lib/pkgconfig/robot_cartesian.pc'
+[0.571s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/lib/python3.10/site-packages'
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/bin'
+[0.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.ps1'
+[0.572s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.dsv'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.sh'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.bash'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.zsh'
+[0.573s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_cartesian/share/colcon-core/packages/robot_cartesian)
+[0.577s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_kinematics
+[0.584s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_control)
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control' for CMake module files
+[0.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_config': CMAKE_PREFIX_PATH=/home/dky/Projects/dky_robot/install/robot_description:/home/dky/Projects/dky_robot/install/robot_qtrecv:/home/dky/Projects/dky_robot/install/robot_kinematics:/home/dky/Projects/dky_robot/install/robot_interfaces:/home/dky/Projects/dky_robot/install/robot_gazebo:/home/dky/Projects/dky_robot/install/robot_driver:/home/dky/Projects/dky_robot/install/robot_config:/home/dky/Projects/dky_robot/install/robot_control:/home/dky/Projects/dky_robot/install/robot_cartesian:/home/dky/Projects/dky_robot/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_config -- -j20 -l20
+[0.586s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control' for CMake config files
+[0.586s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_control', 'cmake_prefix_path')
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/hook/cmake_prefix_path.ps1'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/hook/cmake_prefix_path.dsv'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/hook/cmake_prefix_path.sh'
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/lib'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/bin'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/lib/pkgconfig/robot_control.pc'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/lib/python3.10/site-packages'
+[0.591s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_control/bin'
+[0.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.ps1'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.dsv'
+[0.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.sh'
+[0.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.bash'
+[0.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.zsh'
+[0.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_control/share/colcon-core/packages/robot_control)
+[0.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_driver)
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver' for CMake module files
+[0.597s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver' for CMake config files
+[0.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_driver', 'cmake_prefix_path')
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/hook/cmake_prefix_path.ps1'
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/hook/cmake_prefix_path.dsv'
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/hook/cmake_prefix_path.sh'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/lib'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/bin'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/lib/pkgconfig/robot_driver.pc'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/lib/python3.10/site-packages'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_driver/bin'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.ps1'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.dsv'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.sh'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.bash'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_driver/share/robot_driver/package.zsh'
+[0.600s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_driver/share/colcon-core/packages/robot_driver)
+[0.601s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_kinematics)
+[0.601s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics' for CMake module files
+[0.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_kinematics
+[0.602s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics' for CMake config files
+[0.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_kinematics', 'cmake_prefix_path')
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/hook/cmake_prefix_path.ps1'
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/hook/cmake_prefix_path.dsv'
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/hook/cmake_prefix_path.sh'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/lib'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/bin'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/lib/pkgconfig/robot_kinematics.pc'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/lib/python3.10/site-packages'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/bin'
+[0.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.ps1'
+[0.603s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.dsv'
+[0.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.sh'
+[0.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.bash'
+[0.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.zsh'
+[0.604s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_kinematics/share/colcon-core/packages/robot_kinematics)
+[0.605s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_cartesian)
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian' for CMake module files
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian' for CMake config files
+[0.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_cartesian', 'cmake_prefix_path')
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/hook/cmake_prefix_path.ps1'
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/hook/cmake_prefix_path.dsv'
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/hook/cmake_prefix_path.sh'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/lib'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/bin'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/lib/pkgconfig/robot_cartesian.pc'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/lib/python3.10/site-packages'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_cartesian/bin'
+[0.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.ps1'
+[0.608s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.dsv'
+[0.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.sh'
+[0.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.bash'
+[0.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.zsh'
+[0.608s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_cartesian/share/colcon-core/packages/robot_cartesian)
+[0.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_config' returned '0': CMAKE_PREFIX_PATH=/home/dky/Projects/dky_robot/install/robot_description:/home/dky/Projects/dky_robot/install/robot_qtrecv:/home/dky/Projects/dky_robot/install/robot_kinematics:/home/dky/Projects/dky_robot/install/robot_interfaces:/home/dky/Projects/dky_robot/install/robot_gazebo:/home/dky/Projects/dky_robot/install/robot_driver:/home/dky/Projects/dky_robot/install/robot_config:/home/dky/Projects/dky_robot/install/robot_control:/home/dky/Projects/dky_robot/install/robot_cartesian:/home/dky/Projects/dky_robot/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_config -- -j20 -l20
+[0.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_config': CMAKE_PREFIX_PATH=/home/dky/Projects/dky_robot/install/robot_description:/home/dky/Projects/dky_robot/install/robot_qtrecv:/home/dky/Projects/dky_robot/install/robot_kinematics:/home/dky/Projects/dky_robot/install/robot_interfaces:/home/dky/Projects/dky_robot/install/robot_gazebo:/home/dky/Projects/dky_robot/install/robot_driver:/home/dky/Projects/dky_robot/install/robot_config:/home/dky/Projects/dky_robot/install/robot_control:/home/dky/Projects/dky_robot/install/robot_cartesian:/home/dky/Projects/dky_robot/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_config
+[0.642s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_config)
+[0.643s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config' for CMake module files
+[0.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_config' returned '0': CMAKE_PREFIX_PATH=/home/dky/Projects/dky_robot/install/robot_description:/home/dky/Projects/dky_robot/install/robot_qtrecv:/home/dky/Projects/dky_robot/install/robot_kinematics:/home/dky/Projects/dky_robot/install/robot_interfaces:/home/dky/Projects/dky_robot/install/robot_gazebo:/home/dky/Projects/dky_robot/install/robot_driver:/home/dky/Projects/dky_robot/install/robot_config:/home/dky/Projects/dky_robot/install/robot_control:/home/dky/Projects/dky_robot/install/robot_cartesian:/home/dky/Projects/dky_robot/install/robot_bringup:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_config
+[0.643s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config' for CMake config files
+[0.643s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_config', 'cmake_prefix_path')
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/hook/cmake_prefix_path.ps1'
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/hook/cmake_prefix_path.dsv'
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/hook/cmake_prefix_path.sh'
+[0.644s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config/bin'
+[0.644s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config/lib/pkgconfig/robot_config.pc'
+[0.645s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config/lib/python3.10/site-packages'
+[0.645s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config/bin'
+[0.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.ps1'
+[0.645s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.dsv'
+[0.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.sh'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.bash'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.zsh'
+[0.646s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_config/share/colcon-core/packages/robot_config)
+[0.647s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_kinematics)
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics' for CMake module files
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics' for CMake config files
+[0.648s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_kinematics', 'cmake_prefix_path')
+[0.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/hook/cmake_prefix_path.ps1'
+[0.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/hook/cmake_prefix_path.dsv'
+[0.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/hook/cmake_prefix_path.sh'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/lib'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/bin'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/lib/pkgconfig/robot_kinematics.pc'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/lib/python3.10/site-packages'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_kinematics/bin'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.ps1'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.dsv'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.sh'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.bash'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_kinematics/share/robot_kinematics/package.zsh'
+[0.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_kinematics/share/colcon-core/packages/robot_kinematics)
+[0.674s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_config)
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config' for CMake module files
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config' for CMake config files
+[0.675s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_config', 'cmake_prefix_path')
+[0.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/hook/cmake_prefix_path.ps1'
+[0.676s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/hook/cmake_prefix_path.dsv'
+[0.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/hook/cmake_prefix_path.sh'
+[0.677s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config/bin'
+[0.677s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config/lib/pkgconfig/robot_config.pc'
+[0.677s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config/lib/python3.10/site-packages'
+[0.678s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_config/bin'
+[0.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.ps1'
+[0.679s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.dsv'
+[0.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.sh'
+[0.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.bash'
+[0.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_config/share/robot_config/package.zsh'
+[0.680s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_config/share/colcon-core/packages/robot_config)
+[0.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_interfaces -- -j20 -l20
+[0.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_interfaces
+[0.854s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_interfaces)
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces' for CMake module files
+[0.855s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_interfaces
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces' for CMake config files
+[0.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'cmake_prefix_path')
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.ps1'
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.dsv'
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.sh'
+[0.858s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/lib'
+[0.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'ld_library_path_lib')
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.ps1'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.dsv'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.sh'
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/bin'
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/lib/pkgconfig/robot_interfaces.pc'
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/lib/python3.10/site-packages'
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/bin'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.ps1'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.dsv'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.sh'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.bash'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.zsh'
+[0.862s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_interfaces/share/colcon-core/packages/robot_interfaces)
+[0.925s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_interfaces)
+[0.925s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces' for CMake module files
+[0.926s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces' for CMake config files
+[0.927s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'cmake_prefix_path')
+[0.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.ps1'
+[0.928s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.dsv'
+[0.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.sh'
+[0.929s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/lib'
+[0.929s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'ld_library_path_lib')
+[0.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.ps1'
+[0.930s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.dsv'
+[0.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.sh'
+[0.931s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/bin'
+[0.931s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/lib/pkgconfig/robot_interfaces.pc'
+[0.932s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/lib/python3.10/site-packages'
+[0.932s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_interfaces/bin'
+[0.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.ps1'
+[0.933s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.dsv'
+[0.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.sh'
+[0.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.bash'
+[0.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/package.zsh'
+[0.936s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_interfaces/share/colcon-core/packages/robot_interfaces)
+[7.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_qtrecv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_qtrecv -- -j20 -l20
+[7.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dky/Projects/dky_robot/build/robot_qtrecv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_qtrecv
+[7.344s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_qtrecv)
+[7.344s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv' for CMake module files
+[7.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dky/Projects/dky_robot/build/robot_qtrecv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_qtrecv
+[7.345s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv' for CMake config files
+[7.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_qtrecv', 'cmake_prefix_path')
+[7.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/hook/cmake_prefix_path.ps1'
+[7.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/hook/cmake_prefix_path.dsv'
+[7.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/hook/cmake_prefix_path.sh'
+[7.347s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/lib'
+[7.347s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/bin'
+[7.347s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/lib/pkgconfig/robot_qtrecv.pc'
+[7.347s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/lib/python3.10/site-packages'
+[7.347s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/bin'
+[7.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.ps1'
+[7.348s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.dsv'
+[7.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.sh'
+[7.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.bash'
+[7.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.zsh'
+[7.349s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_qtrecv/share/colcon-core/packages/robot_qtrecv)
+[7.377s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_qtrecv)
+[7.377s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv' for CMake module files
+[7.378s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv' for CMake config files
+[7.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_qtrecv', 'cmake_prefix_path')
+[7.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/hook/cmake_prefix_path.ps1'
+[7.379s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/hook/cmake_prefix_path.dsv'
+[7.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/hook/cmake_prefix_path.sh'
+[7.379s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/lib'
+[7.379s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/bin'
+[7.379s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/lib/pkgconfig/robot_qtrecv.pc'
+[7.380s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/lib/python3.10/site-packages'
+[7.380s] Level 1:colcon.colcon_core.environment:checking '/home/dky/Projects/dky_robot/install/robot_qtrecv/bin'
+[7.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.ps1'
+[7.380s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.dsv'
+[7.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.sh'
+[7.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.bash'
+[7.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/dky/Projects/dky_robot/install/robot_qtrecv/share/robot_qtrecv/package.zsh'
+[7.381s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dky/Projects/dky_robot/install/robot_qtrecv/share/colcon-core/packages/robot_qtrecv)
+[7.382s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.382s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.382s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.383s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.388s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.389s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.389s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.400s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.400s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dky/Projects/dky_robot/install/local_setup.ps1'
+[7.401s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dky/Projects/dky_robot/install/_local_setup_util_ps1.py'
+[7.402s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dky/Projects/dky_robot/install/setup.ps1'
+[7.403s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dky/Projects/dky_robot/install/local_setup.sh'
+[7.403s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dky/Projects/dky_robot/install/_local_setup_util_sh.py'
+[7.404s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dky/Projects/dky_robot/install/setup.sh'
+[7.405s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dky/Projects/dky_robot/install/local_setup.bash'
+[7.405s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dky/Projects/dky_robot/install/setup.bash'
+[7.406s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dky/Projects/dky_robot/install/local_setup.zsh'
+[7.406s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dky/Projects/dky_robot/install/setup.zsh'

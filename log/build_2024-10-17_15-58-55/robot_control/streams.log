@@ -1,0 +1,77 @@
+[0.020s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dky/Projects/dky_robot/src/robot_control -DCMAKE_INSTALL_PREFIX=/home/dky/Projects/dky_robot/install/robot_control
+[0.106s] -- The C compiler identification is GNU 11.4.0
+[0.158s] -- The CXX compiler identification is GNU 11.4.0
+[0.164s] -- Detecting C compiler ABI info
+[0.220s] -- Detecting C compiler ABI info - done
+[0.230s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.230s] -- Detecting C compile features
+[0.230s] -- Detecting C compile features - done
+[0.232s] -- Detecting CXX compiler ABI info
+[0.286s] -- Detecting CXX compiler ABI info - done
+[0.291s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.291s] -- Detecting CXX compile features
+[0.292s] -- Detecting CXX compile features - done
+[0.293s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.405s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.488s] -- Found rclcpp_action: 16.0.8 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.530s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.534s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.540s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.552s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.567s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.725s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.729s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.805s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.835s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.891s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.905s] -- Looking for pthread.h
+[0.970s] -- Looking for pthread.h - found
+[0.970s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.036s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.036s] -- Found Threads: TRUE  
+[1.167s] -- Found actionlib_msgs: 4.2.3 (/opt/ros/humble/share/actionlib_msgs/cmake)
+[1.208s] -- Found control_msgs: 4.4.0 (/opt/ros/humble/share/control_msgs/cmake)
+[1.565s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.633s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.634s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.634s] -- Configured cppcheck include dirs: /home/dky/Projects/dky_robot/src/robot_control/include;/home/dky/Projects/dky_robot/src/robot_control/include/robot_control
+[1.634s] -- Configured cppcheck exclude dirs and/or files: 
+[1.635s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.635s] -- Configured cpplint exclude dirs and/or files: 
+[1.635s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.636s] -- Added test 'lint_cmake' to check CMake code style
+[1.636s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.637s] -- Added test 'uncrustify' to check C / C++ code style
+[1.637s] -- Configured uncrustify additional arguments: 
+[1.637s] -- Added test 'xmllint' to check XML markup files
+[1.638s] -- Configuring done
+[1.647s] -- Generating done
+[1.649s] -- Build files have been written to: /home/dky/Projects/dky_robot/build/robot_control
+[1.658s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dky/Projects/dky_robot/src/robot_control -DCMAKE_INSTALL_PREFIX=/home/dky/Projects/dky_robot/install/robot_control
+[1.660s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_control -- -j20 -l20
+[1.699s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_control.dir/src/robot_control.cpp.o[0m
+[6.345s] [100%] [32m[1mLinking CXX executable robot_control[0m
+[6.558s] [100%] Built target robot_control
+[6.571s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_control -- -j20 -l20
+[6.600s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_control
+[6.608s] -- Install configuration: ""
+[6.608s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/launch
+[6.608s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/launch/robot_control.launch.py
+[6.608s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/lib/robot_control/robot_control
+[6.611s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_control/lib/robot_control/robot_control" to ""
+[6.611s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/ament_index/resource_index/package_run_dependencies/robot_control
+[6.611s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/ament_index/resource_index/parent_prefix_path/robot_control
+[6.612s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/environment/ament_prefix_path.sh
+[6.612s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/environment/ament_prefix_path.dsv
+[6.612s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/environment/path.sh
+[6.612s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/environment/path.dsv
+[6.612s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/local_setup.bash
+[6.612s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/local_setup.sh
+[6.612s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/local_setup.zsh
+[6.613s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/local_setup.dsv
+[6.613s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.dsv
+[6.613s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/ament_index/resource_index/packages/robot_control
+[6.613s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/cmake/robot_controlConfig.cmake
+[6.613s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/cmake/robot_controlConfig-version.cmake
+[6.614s] -- Installing: /home/dky/Projects/dky_robot/install/robot_control/share/robot_control/package.xml
+[6.616s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_control

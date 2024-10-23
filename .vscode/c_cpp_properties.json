@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/opt/ros/humble/include/**",
+                "/home/dky/Projects/dky_robot/src/robot_control/include/**",
+                "/home/dky/Projects/dky_robot/src/robot_description/include/**",
+                "/home/dky/Projects/dky_robot/src/robot_driver/include/**",
+                "/home/dky/Projects/dky_robot/src/robot_interfaces/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/install/robot_interfaces/include/robot_interfaces"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/clang-14",
+            "cStandard": "c17",
+            "cppStandard": "c++14"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/**"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,51 @@
+[0.007s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_interfaces -- -j20 -l20
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_generator_c[0m
+[0.062s] [  2%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/qt_recv__functions.c.o[0m
+[0.062s] [  5%] Built target robot_interfaces__cpp
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.081s] [  5%] Built target ament_cmake_python_copy_robot_interfaces
+[0.082s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_cpp[0m
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target robot_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.091s] In file included from [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/qt_recv__functions.h:19[m[K,
+[0.092s]                  from [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/qt_recv__functions.c:4[m[K:
+[0.092s] [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_generator_c/robot_interfaces/msg/detail/qt_recv__struct.h:29:10:[m[K [01;31m[Kfatal error: [m[Ktf2/msg/detail/quaternion__struct.h: No such file or directory
+[0.092s]    29 | #include [01;31m[K"tf2/msg/detail/quaternion__struct.h"[m[K
+[0.092s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.093s] compilation terminated.
+[0.094s] gmake[2]: *** [CMakeFiles/robot_interfaces__rosidl_generator_c.dir/build.make:203: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/qt_recv__functions.c.o] Error 1
+[0.094s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/robot_interfaces__rosidl_generator_c.dir/all] Error 2
+[0.094s] gmake[1]: *** Waiting for unfinished jobs....
+[0.111s] [  7%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/qt_recv__type_support.cpp.o[0m
+[0.116s] [ 10%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/qt_recv__type_support.cpp.o[0m
+[0.122s] [ 12%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/qt_recv__type_support.cpp.o[0m
+[0.166s] In file included from [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/qt_recv__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[0.166s]                  from [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/qt_recv__type_support.cpp:4[m[K:
+[0.166s] [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/qt_recv__struct.hpp:26:10:[m[K [01;31m[Kfatal error: [m[Ktf2/msg/detail/quaternion__struct.hpp: No such file or directory
+[0.166s]    26 | #include [01;31m[K"tf2/msg/detail/quaternion__struct.hpp"[m[K
+[0.166s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.167s] compilation terminated.
+[0.167s] gmake[2]: *** [CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:180: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/qt_recv__type_support.cpp.o] Error 1
+[0.167s] gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[0.168s] In file included from [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_typesupport_cpp/robot_interfaces/msg/qt_recv__type_support.cpp:7[m[K:
+[0.168s] [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/qt_recv__struct.hpp:26:10:[m[K [01;31m[Kfatal error: [m[Ktf2/msg/detail/quaternion__struct.hpp: No such file or directory
+[0.168s]    26 | #include [01;31m[K"tf2/msg/detail/quaternion__struct.hpp"[m[K
+[0.168s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.168s] compilation terminated.
+[0.169s] gmake[2]: *** [CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/build.make:172: CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/qt_recv__type_support.cpp.o] Error 1
+[0.169s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/all] Error 2
+[0.173s] In file included from [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/qt_recv__type_support.cpp:12[m[K:
+[0.173s] [01m[K/home/dky/Projects/dky_robot/build/robot_interfaces/rosidl_generator_cpp/robot_interfaces/msg/detail/qt_recv__struct.hpp:26:10:[m[K [01;31m[Kfatal error: [m[Ktf2/msg/detail/quaternion__struct.hpp: No such file or directory
+[0.173s]    26 | #include [01;31m[K"tf2/msg/detail/quaternion__struct.hpp"[m[K
+[0.173s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.173s] compilation terminated.
+[0.174s] gmake[2]: *** [CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:180: CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/qt_recv__type_support.cpp.o] Error 1
+[0.174s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[0.281s] running egg_info
+[0.281s] writing robot_interfaces.egg-info/PKG-INFO
+[0.282s] writing dependency_links to robot_interfaces.egg-info/dependency_links.txt
+[0.282s] writing top-level names to robot_interfaces.egg-info/top_level.txt
+[0.283s] reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'
+[0.283s] writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'
+[0.302s] [ 12%] Built target ament_cmake_python_build_robot_interfaces_egg
+[0.302s] gmake: *** [Makefile:146: all] Error 2
+[0.305s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_interfaces -- -j20 -l20

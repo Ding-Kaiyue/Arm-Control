@@ -117,7 +117,7 @@ class JointPosPub : public rclcpp :: Node
                     float position = positions[i];
                     memcpy(&tx_data[i * 4 + 2], &position, sizeof(float));
                 }
-                tx_data[26] = 0xEB;
+                tx_data [26] = 0xEB;
                 tx_data[27] = 0xAA;
                 ros_ser.write(tx_data, sizeof(tx_data));
             }

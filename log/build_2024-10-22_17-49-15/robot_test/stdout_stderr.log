@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/robot_test.dir/src/robot_test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable robot_test[0m
+[100%] Built target robot_test
+-- Install configuration: ""
+-- Installing: /home/dky/Projects/dky_robot/install/robot_test/lib/robot_test/robot_test
+-- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_test/lib/robot_test/robot_test" to ""
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/ament_index/resource_index/package_run_dependencies/robot_test
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/ament_index/resource_index/parent_prefix_path/robot_test
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/environment/ament_prefix_path.sh
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/environment/path.sh
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/environment/path.dsv
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/local_setup.bash
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/local_setup.sh
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/local_setup.zsh
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/local_setup.dsv
+-- Installing: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/package.dsv
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/ament_index/resource_index/packages/robot_test
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/cmake/robot_testConfig.cmake
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/cmake/robot_testConfig-version.cmake
+-- Up-to-date: /home/dky/Projects/dky_robot/install/robot_test/share/robot_test/package.xml

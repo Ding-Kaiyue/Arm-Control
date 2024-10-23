@@ -1,0 +1,85 @@
+[0.022s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_cartesian': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dky/Projects/dky_robot/src/robot_cartesian -DCMAKE_INSTALL_PREFIX=/home/dky/Projects/dky_robot/install/robot_cartesian
+[0.111s] -- The C compiler identification is GNU 11.4.0
+[0.167s] -- The CXX compiler identification is GNU 11.4.0
+[0.175s] -- Detecting C compiler ABI info
+[0.236s] -- Detecting C compiler ABI info - done
+[0.242s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.242s] -- Detecting C compile features
+[0.242s] -- Detecting C compile features - done
+[0.245s] -- Detecting CXX compiler ABI info
+[0.312s] -- Detecting CXX compiler ABI info - done
+[0.322s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.322s] -- Detecting CXX compile features
+[0.322s] -- Detecting CXX compile features - done
+[0.326s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.447s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.532s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.590s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.597s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.608s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.626s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.652s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.728s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.730s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.822s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.843s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.884s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.892s] -- Looking for pthread.h
+[0.954s] -- Looking for pthread.h - found
+[0.955s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.014s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.015s] -- Found Threads: TRUE  
+[1.171s] -- Found moveit_ros_planning_interface: 2.5.5 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.197s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[2.044s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.064s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.099s] -- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.167s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.286s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.427s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.428s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.818s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.205s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[3.381s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[3.682s] -- Found robot_interfaces: 0.0.0 (/home/dky/Projects/dky_robot/install/robot_interfaces/share/robot_interfaces/cmake)
+[3.731s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.790s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.790s] -- Configured cppcheck include dirs: 
+[3.790s] -- Configured cppcheck exclude dirs and/or files: 
+[3.790s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.791s] -- Added test 'lint_cmake' to check CMake code style
+[3.791s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.792s] -- Added test 'uncrustify' to check C / C++ code style
+[3.792s] -- Configured uncrustify additional arguments: 
+[3.792s] -- Added test 'xmllint' to check XML markup files
+[3.793s] -- Configuring done
+[3.811s] -- Generating done
+[3.812s] -- Build files have been written to: /home/dky/Projects/dky_robot/build/robot_cartesian
+[3.824s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_cartesian' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dky/Projects/dky_robot/src/robot_cartesian -DCMAKE_INSTALL_PREFIX=/home/dky/Projects/dky_robot/install/robot_cartesian
+[3.825s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_cartesian': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_cartesian -- -j20 -l20
+[3.872s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_cartesian.dir/src/robot_cartesian.cpp.o[0m
+[13.935s] [100%] [32m[1mLinking CXX executable robot_cartesian[0m
+[14.508s] [100%] Built target robot_cartesian
+[14.519s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_cartesian' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_cartesian -- -j20 -l20
+[14.556s] Invoking command in '/home/dky/Projects/dky_robot/build/robot_cartesian': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_cartesian
+[14.566s] -- Install configuration: ""
+[14.566s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/lib/robot_cartesian/robot_cartesian
+[14.576s] -- Set runtime path of "/home/dky/Projects/dky_robot/install/robot_cartesian/lib/robot_cartesian/robot_cartesian" to ""
+[14.576s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/launch
+[14.576s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/launch/robot_cartesian.launch.py
+[14.576s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/ament_index/resource_index/package_run_dependencies/robot_cartesian
+[14.576s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/ament_index/resource_index/parent_prefix_path/robot_cartesian
+[14.577s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/environment/ament_prefix_path.sh
+[14.577s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/environment/ament_prefix_path.dsv
+[14.577s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/environment/path.sh
+[14.577s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/environment/path.dsv
+[14.577s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/local_setup.bash
+[14.578s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/local_setup.sh
+[14.578s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/local_setup.zsh
+[14.578s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/local_setup.dsv
+[14.578s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.dsv
+[14.578s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/ament_index/resource_index/packages/robot_cartesian
+[14.578s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/cmake/robot_cartesianConfig.cmake
+[14.579s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/cmake/robot_cartesianConfig-version.cmake
+[14.579s] -- Installing: /home/dky/Projects/dky_robot/install/robot_cartesian/share/robot_cartesian/package.xml
+[14.582s] Invoked command in '/home/dky/Projects/dky_robot/build/robot_cartesian' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_cartesian

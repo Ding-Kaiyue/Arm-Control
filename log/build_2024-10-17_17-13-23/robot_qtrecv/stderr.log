@@ -1,0 +1,9 @@
+[01m[K/home/dky/Projects/dky_robot/src/robot_qtrecv/src/robot_qtrecv.cpp:[m[K In member function ‘[01m[Kvoid QtMessageProcessor::receive_qt_data()[m[K’:
+[01m[K/home/dky/Projects/dky_robot/src/robot_qtrecv/src/robot_qtrecv.cpp:86:69:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{0}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd_msgs::msg::Int32MultiArray[m[K’ {aka ‘[01m[Kstd_msgs::msg::Int32MultiArray_<std::allocator<void> >[m[K’}
+   86 |                     std_msgs::msg::Int32MultiArray qt_cmd_joint = {0[01;31m[K}[m[K;
+      |                                                                     [01;31m[K^[m[K
+      |                                                                     [01;31m[K|[m[K
+      |                                                                     [01;31m[K<brace-enclosed initializer list>[m[K
+gmake[2]: *** [CMakeFiles/robot_qtrecv.dir/build.make:76: CMakeFiles/robot_qtrecv.dir/src/robot_qtrecv.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_qtrecv.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

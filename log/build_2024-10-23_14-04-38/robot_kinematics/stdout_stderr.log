@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target robot_func[0m
+[ 50%] Built target robot_state_get
+[ 75%] [32mBuilding CXX object CMakeFiles/robot_func.dir/src/robot_func.cpp.o[0m
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_func.cpp:[m[K In member function ‘[01m[Kvoid RobotFunctions::working_mode_callback(robot_interfaces::msg::QtRecv_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/dky/Projects/dky_robot/src/robot_kinematics/src/robot_func.cpp:78:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class moveit::planning_interface::MoveGroupInterface[m[K’ {aka ‘[01m[Kclass moveit::planning_interface::MoveGroupInterface[m[K’} has no member named ‘[01m[KgetJointModelGroup[m[K’; did you mean ‘[01m[KgetJointModelGroupNames[m[K’?
+   78 |           current_state->copyJointGroupPositions(arm->[01;31m[KgetJointModelGroup[m[K(), joint_values);
+      |                                                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                                       [32m[KgetJointModelGroupNames[m[K
+gmake[2]: *** [CMakeFiles/robot_func.dir/build.make:76: CMakeFiles/robot_func.dir/src/robot_func.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/robot_func.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

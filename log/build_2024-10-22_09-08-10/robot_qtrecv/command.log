@@ -1,0 +1,4 @@
+Invoking command in '/home/dky/Projects/dky_robot/build/robot_qtrecv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_qtrecv -- -j20 -l20
+Invoked command in '/home/dky/Projects/dky_robot/build/robot_qtrecv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_qtrecv -- -j20 -l20
+Invoking command in '/home/dky/Projects/dky_robot/build/robot_qtrecv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_qtrecv
+Invoked command in '/home/dky/Projects/dky_robot/build/robot_qtrecv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dky/Projects/dky_robot/build/robot_qtrecv
