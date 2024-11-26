@@ -15,12 +15,15 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(trajectory_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/QtRecv.msg"
   "msg/LineMsg.msg"
   "msg/ArmState.msg"
-  DEPENDENCIES std_msgs geometry_msgs 
+  "msg/QtPub.msg"
+  DEPENDENCIES std_msgs geometry_msgs sensor_msgs tf2_geometry_msgs tf2_ros trajectory_msgs
 )
 
 if(BUILD_TESTING)

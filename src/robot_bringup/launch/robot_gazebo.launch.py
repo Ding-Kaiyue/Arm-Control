@@ -19,8 +19,12 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(os.path.join(get_package_share_directory(('robot_kinematics')), 'launch', 'robot_state_get.launch.py'))
     )
 
-    robot_qtrecv_up = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(get_package_share_directory(('robot_qtrecv')), 'launch', 'robot_qtrecv.launch.py'))
+    # robot_qtrecv_up = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(os.path.join(get_package_share_directory(('robot_qtrecv')), 'launch', 'robot_qtrecv.launch.py'))
+    # )
+
+    robot_tcp_server_get_up = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(os.path.join(get_package_share_directory(('robot_qtrecv')), 'launch', 'robot_tcp_server.launch.py'))
     )
 
     robot_functions_up = IncludeLaunchDescription(
@@ -31,8 +35,8 @@ def generate_launch_description():
         robot_gazebo_up,
         robot_moveit_up,
         robot_state_get_up,
-        robot_qtrecv_up,
+        robot_tcp_server_get_up,
         robot_functions_up
     ])
 
-   
+     

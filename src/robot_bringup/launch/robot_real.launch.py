@@ -12,8 +12,16 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
 
-    robot_driver = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_driver'), 'launch', 'robot_driver.launch.py'))
+    # robot_driver = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_driver'), 'launch', 'robot_driver.launch.py'))
+    # )
+
+    robot_driver_cantx = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_driver'), 'launch', 'robot_driver_cantx.launch.py'))
+    )
+
+    robto_tcp_server = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_qtrecv'), 'launch', 'robot_tcp_server.launch.py'))
     )
 
     robot_description = IncludeLaunchDescription(
@@ -30,7 +38,8 @@ def generate_launch_description():
 
     
     return LaunchDescription([
-        robot_driver,
+        robot_driver_cantx,
+        robto_tcp_server,
         robot_description,
         robot_control,
         robot_moveit_config,

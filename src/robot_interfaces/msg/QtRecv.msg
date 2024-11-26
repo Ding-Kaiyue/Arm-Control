@@ -1,9 +1,4 @@
-uint8 working_mode
-
+uint8 working_mode                      # 机械臂工作模式
+bool qt_flag                            # 是否使用上位机控制
 std_msgs/Int32MultiArray joint_angles_goal          # 关节目标位置
-# std_msgs/Int32MultiArray joint_angles_current       # 关节当前位置
-
 geometry_msgs/Pose arm_pose_goal                    # 机械臂目标姿态
-# geometry_msgs/Pose arm_pose_current                 # 机械臂当前姿态
-
-# geometry_msgs/Quaternion end_effector_quat                   # 末端执行器四元数

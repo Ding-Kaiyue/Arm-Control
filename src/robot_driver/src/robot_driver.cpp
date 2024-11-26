@@ -11,6 +11,9 @@
 #include "message_filters/time_synchronizer.h"
 #include "sensor_msgs/msg/joint_state.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "std_msgs/msg/u_int8.hpp"
+// #include "robot_interfaces/msg/qt_recv.hpp"
+#include "robot_interfaces/msg/qt_pub.hpp"
 
 
 #define BAUDRATE 115200
@@ -25,8 +28,11 @@ class JointPosPub : public rclcpp :: Node
         JointPosPub(const std::string &node_name) : Node(node_name), stop_flag(true), rx_buff(30) {
             // receive the cubic polynomials from the robot_control node
             subscriber_ = this->create_subscription<sensor_msgs::msg::JointState>("motor_cmd", 10, std::bind(&JointPosPub::joint_pos_callback, this, _1));
+            // receive the qt cmd from the DRobot app
+            subscriber_motor_states_ = this->create_subscription<robot_interfaces::msg::QtPub>("motor_states_req", 10, std::bind(&JointPosPub::motor_states_request_callback, this, _1));
             // publish the joint attitude from the real motors
             publisher_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 10);
+
             
             ros_ser.setPort("/dev/ttyUSB0");
             ros_ser.setBaudrate(BAUDRATE);
@@ -64,17 +70,34 @@ class JointPosPub : public rclcpp :: Node
     private:
         serial::Serial ros_ser;
         rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscriber_;
+        rclcpp::Subscription<robot_interfaces::msg::QtPub>::SharedPtr subscriber_motor_states_;
         rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr publisher_;
         std::thread receive_thread;
         std::thread send_thread;
         std::atomic<bool> stop_flag;
         std::vector<uint8_t> rx_buff;
+        std::vector<double> joint_group_positions;
+        std::uint8_t working_mode;
+        std::atomic<bool> qt_flag;
+        
 
         void joint_pos_callback(const sensor_msgs::msg::JointState::SharedPtr msg) {
             for (size_t i = 0; i < msg->position.size(); i++) {
                 RCLCPP_INFO(this->get_logger(), "joint %lu: pos: %lf", i, msg->position[i]);
             }
+            working_mode = 0x00;   // 使用rviz拖动控制
             sendData(msg->position);
+        }
+
+        void motor_states_request_callback(const robot_interfaces::msg::QtPub::SharedPtr msg) {
+            RCLCPP_INFO(this->get_logger(), "working mode: %d", msg->working_mode);
+            if (msg->qt_flag == true) {
+                qt_flag = true;
+            } else {
+                qt_flag = false;
+            }
+            working_mode = msg->working_mode;
+            sendData(msg->joint_group_positions);
         }
 
         void receiveData() {
@@ -110,14 +133,15 @@ class JointPosPub : public rclcpp :: Node
         }
         void sendData(const std::vector<double>& positions) {
             if (positions.size() <= 6) {
-                uint8_t tx_data[28] = {0};
+                uint8_t tx_data[29] = {0};
                 tx_data[0] = 0x55;
                 tx_data[1] = 0xAA;
+                tx_data[2] = working_mode;
                 for (int i = 0; i < 6; i++) {
                     float position = positions[i];
-                    memcpy(&tx_data[i * 4 + 2], &position, sizeof(float));
+                    memcpy(&tx_data[i * 4 + 3], &position, sizeof(float));
                 }
-                tx_data [26] = 0xEB;
+                tx_data[26] = 0xEB;
                 tx_data[27] = 0xAA;
                 ros_ser.write(tx_data, sizeof(tx_data));
             }

@@ -27,10 +27,6 @@ class QtMessageProcessor : public rclcpp :: Node
 {
     public:
         QtMessageProcessor(const std::string &node_name) : Node(node_name), stop_flag(true), rx_buff(100) {
-            // 接收qt发送的命令经过转换发到arm_goal话题上
-            // publisher_ik = this->create_publisher<geometry_msgs::msg::Pose>("arm_goal", 10);
-            // publisher_fk = this->create_publisher<std_msgs::msg::Int32MultiArray>("joint_goal", 10);
-            // publisher_functions = this->create_publisher<std_msgs::msg::UInt8>("functions", 10);
             subscriber_states_ = this->create_subscription<robot_interfaces::msg::ArmState>("arm_states", 10, std::bind(&QtMessageProcessor::arm_states_callback, this, _1));
             publisher_ = this->create_publisher<robot_interfaces::msg::QtRecv>("qt_cmd", 10);
             qt_ser.setPort("/dev/ttyUSB0");
@@ -46,11 +42,16 @@ class QtMessageProcessor : public rclcpp :: Node
                 if (qt_ser.isOpen()) {
                     RCLCPP_INFO(this->get_logger(), "serial port is open");
                     receive_thread = std::thread(&QtMessageProcessor::receive_qt_data, this);
+                    qt_cmd.qt_flag = true;
                 } else {
                     RCLCPP_INFO(this->get_logger(), "serial port error");
+                    qt_cmd.qt_flag = false;
                 }
+                publisher_->publish(qt_cmd);
             } catch (const std::exception &e) {
                 RCLCPP_ERROR(this->get_logger(), "Exception opening serial port: %s", e.what());
+                qt_cmd.qt_flag = false;
+                publisher_->publish(qt_cmd);
             }
         }
 
@@ -62,12 +63,23 @@ class QtMessageProcessor : public rclcpp :: Node
             if (send_thread.joinable()) {
                 send_thread.join();
             }
+
+            try
+            {
+                if (qt_ser.isOpen()) {
+                    qt_ser.close();
+                    qt_cmd.qt_flag = false;
+                }
+                publisher_->publish(qt_cmd);
+            }
+            catch(const std::exception& e)
+            {
+                RCLCPP_INFO(this->get_logger(), "Exception opening serial port: %s", e.what());
+            }
+            
         }
     private:
         serial::Serial qt_ser;
-        // rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr publisher_ik;
-        // rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr publisher_fk;
-        // rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr publisher_functions;
         rclcpp::Subscription<robot_interfaces::msg::ArmState>::SharedPtr subscriber_states_;
         rclcpp::Publisher<robot_interfaces::msg::QtRecv>::SharedPtr publisher_;
         robot_interfaces::msg::QtRecv qt_cmd;
@@ -78,10 +90,6 @@ class QtMessageProcessor : public rclcpp :: Node
         std::thread send_thread;
         std::atomic<bool> stop_flag;
         std::vector<uint8_t> rx_buff;
-        
-        // geometry_msgs::msg::Pose end_effector_goal_pose; // 末端执行器的当期望姿态
-        // tf2::Quaternion end_effector_quat;  // 末端执行器的四元数
-        // std_msgs::msg::UInt8 func_num;
 
         void receive_qt_data()
         {
@@ -94,9 +102,7 @@ class QtMessageProcessor : public rclcpp :: Node
 
                     switch (qt_cmd_raw.data[0]) {
                         case 0x00: {    // Functions
-                            for (int i = 1; i <= 6; i++) {
-                                qt_cmd.working_mode = qt_cmd_raw.data[3];
-                            }
+                            qt_cmd.working_mode = qt_cmd_raw.data[3];
                             publisher_->publish(qt_cmd);
                             break;
                         }
@@ -120,7 +126,7 @@ class QtMessageProcessor : public rclcpp :: Node
                                 tf2::Quaternion rotation_quat;
                                 if (qt_cmd_raw.data[2] == 0x01) {           // +
                                     RCLCPP_INFO(this->get_logger(), "zrot+%d", qt_cmd_raw.data[3]);
-                                    rotation_quat.setRPY(0, 0, qt_cmd_raw.data[3] * M_PI / 180.0);
+                                    rotation_quat.setRPY(0, 0, qt_cmd_raw.data[3] * 5 * M_PI / 180.0);
                                     // 旋转后的新四元数
                                     tf2::Quaternion new_quat = rotation_quat * end_effector_quat;
                                     new_quat.normalize();
@@ -128,7 +134,7 @@ class QtMessageProcessor : public rclcpp :: Node
                                     qt_cmd.arm_pose_goal.orientation = tf2::toMsg(new_quat);
                                 } else if (qt_cmd_raw.data[2] == 0x00) {    // -
                                     RCLCPP_INFO(this->get_logger(), "zrot-%d", qt_cmd_raw.data[3]);
-                                    rotation_quat.setRPY(0, 0, -qt_cmd_raw.data[3] * M_PI / 180.0);
+                                    rotation_quat.setRPY(0, 0, -qt_cmd_raw.data[3] * 5 * M_PI / 180.0);
                                     // 旋转后的新四元数
                                     tf2::Quaternion new_quat = rotation_quat * end_effector_quat;
                                     new_quat.normalize();
@@ -157,7 +163,7 @@ class QtMessageProcessor : public rclcpp :: Node
                                 tf2::Quaternion rotation_quat;
                                 if (qt_cmd_raw.data[2] == 0x01) {           // +
                                     RCLCPP_INFO(this->get_logger(), "xrot+%d", qt_cmd_raw.data[3]);                                    
-                                    rotation_quat.setRPY(qt_cmd_raw.data[3] * M_PI / 180.0, 0, 0);
+                                    rotation_quat.setRPY(qt_cmd_raw.data[3] * 5 * M_PI / 180.0, 0, 0);
                                     // 旋转后的新四元数
                                     tf2::Quaternion new_quat = rotation_quat * end_effector_quat;
                                     new_quat.normalize();
@@ -165,7 +171,7 @@ class QtMessageProcessor : public rclcpp :: Node
                                     qt_cmd.arm_pose_goal.orientation = tf2::toMsg(new_quat);
                                 } else if (qt_cmd_raw.data[2] == 0x00) {    // -
                                     RCLCPP_INFO(this->get_logger(), "xrot-%d", qt_cmd_raw.data[3]);
-                                    rotation_quat.setRPY(-qt_cmd_raw.data[3] * M_PI / 180.0, 0, 0);
+                                    rotation_quat.setRPY(-qt_cmd_raw.data[3] * 5 * M_PI / 180.0, 0, 0);
                                     // 旋转后的新四元数
                                     tf2::Quaternion new_quat = rotation_quat * end_effector_quat;
                                     new_quat.normalize();
@@ -194,7 +200,7 @@ class QtMessageProcessor : public rclcpp :: Node
                                 tf2::Quaternion rotation_quat;
                                 if (qt_cmd_raw.data[2] == 0x01) {           // +
                                     RCLCPP_INFO(this->get_logger(), "yrot+%d", qt_cmd_raw.data[3]);
-                                    rotation_quat.setRPY(0, qt_cmd_raw.data[3] * M_PI / 180.0, 0);
+                                    rotation_quat.setRPY(0, qt_cmd_raw.data[3] * 5 * M_PI / 180.0, 0);
                                     // 旋转后的新四元数
                                     tf2::Quaternion new_quat = rotation_quat * end_effector_quat;
                                     new_quat.normalize();
@@ -202,7 +208,7 @@ class QtMessageProcessor : public rclcpp :: Node
                                     qt_cmd.arm_pose_goal.orientation = tf2::toMsg(new_quat);
                                 } else if (qt_cmd_raw.data[2] == 0x00) {    // -
                                     RCLCPP_INFO(this->get_logger(), "yrot-%d", qt_cmd_raw.data[3]);
-                                    rotation_quat.setRPY(0, -qt_cmd_raw.data[3] * M_PI / 180.0, 0);
+                                    rotation_quat.setRPY(0, -qt_cmd_raw.data[3] * 5 * M_PI / 180.0, 0);
                                     // 旋转后的新四元数
                                     tf2::Quaternion new_quat = rotation_quat * end_effector_quat;
                                     new_quat.normalize();

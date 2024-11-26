@@ -249,12 +249,7 @@ bool cubicSpline::getYbyX(double &x_in, double &y_out)
 RobotControl::RobotControl(std::string name) : Node(name)
 {
     using namespace std::placeholders;
- 
-    // this->declare_parameter<bool>("follow", follow_);
-    // this->get_parameter("follow", follow_);
-
-    // joint_msg.joint.resize(6);
-    // joint_msg.dof = 6;
+    
     joint_msg.position.resize(6);
     joint_msg.velocity.resize(6);
     //  初始位姿
@@ -558,6 +553,7 @@ void RobotControl::execute_move(const std::shared_ptr<GoalHandleFollowJointTraje
     goal_handle->succeed(result);
     RCLCPP_INFO(this->get_logger(), "Goal Succeeded");
 }
+
 
 void RobotControl::timer_callback()
 {

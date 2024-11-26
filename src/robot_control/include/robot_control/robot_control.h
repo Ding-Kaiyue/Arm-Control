@@ -6,8 +6,6 @@
 #include "control_msgs/action/follow_joint_trajectory.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 #include <iostream>
-// #include "robot_interfaces/msg/jointpos.hpp"
-
 #include <vector>
 #include <algorithm>
 
