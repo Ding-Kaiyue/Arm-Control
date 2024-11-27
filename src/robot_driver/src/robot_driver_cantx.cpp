@@ -21,15 +21,12 @@ class SocketCanSenderNode : public rclcpp :: Node
             subscriber_ = this->create_subscription<sensor_msgs::msg::JointState>("motor_cmd", 10, std::bind(&SocketCanSenderNode::joint_pos_callback, this, _1));
             // receive the qt cmd from the DRobot app
             subscriber_motor_states_ = this->create_subscription<robot_interfaces::msg::QtPub>("motor_states_req", 10, std::bind(&SocketCanSenderNode::motor_states_request_callback, this, _1));
-            // publish the joint attitude from the real motors
-            publisher_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 10);
-
             timer_ = this->create_wall_timer(std::chrono::milliseconds(20), std::bind(&SocketCanSenderNode::timer_callback, this));
         }
     private:
         rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscriber_;
         rclcpp::Subscription<robot_interfaces::msg::QtPub>::SharedPtr subscriber_motor_states_;
-        rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr publisher_;
+        
         rclcpp::TimerBase::SharedPtr timer_;
 
         void joint_pos_callback(const sensor_msgs::msg::JointState::SharedPtr msg) {
@@ -57,10 +54,10 @@ class SocketCanSenderNode : public rclcpp :: Node
             tx_data[0] = 0x06;
             tx_data[1] = 0x00;
             tx_data[2] = motor_mode;
-            tx_data[3] = data_bytes[0];
-            tx_data[4] = data_bytes[1];
-            tx_data[5] = data_bytes[2];
-            tx_data[6] = data_bytes[3];
+            tx_data[3] = data_bytes[3];
+            tx_data[4] = data_bytes[2];
+            tx_data[5] = data_bytes[1];
+            tx_data[6] = data_bytes[0];
             sender.send(tx_data, sizeof(tx_data), canid, std::chrono::seconds(1));
         }
 
@@ -68,9 +65,10 @@ class SocketCanSenderNode : public rclcpp :: Node
             uint8_t tx_data[3] = {0};
             SocketCanSender sender("can0", false);
             CanId canid(0x3F, 0, FrameType::DATA, ExtendedFrame);       // 夹爪ID定为0x3F
-            tx_data[0] = gripper_position;
-            tx_data[1] = gripper_velocity;
-            tx_data[2] = gripper_force;
+            tx_data[0] = 0x3F;
+            tx_data[1] = gripper_position;
+            tx_data[2] = gripper_velocity;
+            tx_data[3] = gripper_force;
             sender.send(tx_data, sizeof(tx_data), canid, std::chrono::seconds(1));
         }
 
@@ -89,7 +87,7 @@ class SocketCanSenderNode : public rclcpp :: Node
 int main(int argc, char const *argv[])
 {
     rclcpp::init(argc, argv);
-    auto node = std::make_shared<SocketCanSenderNode>("socket_cantx_node");
+    auto node = std::make_shared<SocketCanSenderNode>("robot_driver_cantx");
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;

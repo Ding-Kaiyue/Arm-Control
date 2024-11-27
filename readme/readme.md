@@ -1,3 +1,43 @@
+# <span style="color:#FCDB72;">使用说明</span>
+```
+cd src/
+git clone http://github.com/autowarfoundation/ros2_socketcan.git
+colcon build --packages-select ros2_socketcan_msgs
+colcon build --packages-select ros2_socketcan
+colcon build
+source install/setup.bash
+ros2 launch robot_xxx.launch.py
+```
+## <span style="color:#B885B0;">ID设置</span>
+Joint1~Joint6的关节电机控制ID设置为0x201~0x206，反馈ID设置为0x601~0x606
+
+Gripper的ID设置为0x03F, 没有反馈(暂)
+
+## <span style="color:#B885B0;">协议说明</span>
+### <span id="protocol-description1" style="color:#8DB732;">上位机-主控</span>
+
+### <span id="protocol-description2" style="color:#8DB732;">主控-关节电机</span>
+**发送**
+
+| ID | Data[0] | Data[1] | Data[2] | Data[3] | Data[4] | Data[5] | Data[6] | 
+|----|---------|---------|---------|---------|---------|---------|---------|
+|0x01|  0x06   | 0x01(en)|0x04(vel)| value[0]| value[1]| value[2]| value[3]|
+|    |         |0x00(dis)|0x05(pos)| value[0]| value[1]| value[2]| value[3]|
+
+**反馈**
+
+| ID_cmd | Data[0] | Data[1] |
+|--------|---------|---------|
+|  0x201 |   0x01  |0x04(vel)|
+|        |   0x01  |0x05(pos)|
+|        |   0x01  |0x02(for)|
+
+| ID_ret | Data[0] | Data[1] | Data[2] | Data[3] | Data[4] | Data[5] | Data[6] | 
+|--------|---------|---------|---------|---------|---------|---------|---------|
+|  0x301 |   0x16  | 0x01(en)|0x04(vel)| value[0]| value[1]| value[2]| value[3]|
+|        |         |         |0x05(pos)| value[0]| value[1]| value[2]| value[3]|
+|        |         |         |0x02(for)| value[0]| value[1]| value[2]| value[3]|
+
 # <span style="color:#FCDB72;">功能包说明</span>
 ## <span style="color:#B885B0;">robot_bringup</span>
 该功能包是launch文件的集合，其中带gazebo的是仿真文件
@@ -90,13 +130,35 @@ geometry_msgs/Pose arm_pose_goal                    # 机械臂目标姿态
 * 删去ArmState类型消息, 直接使用<span style="color:#F38B83;">geometry_msgs/Pose</span>类型
 * QtPub消息类型中可以删去<span style="color:#F38B83;">Cartesian Space Planning</span>部分，因为上位机总是直线运动，不存在三个以上的点供插值；可以删去<span style="color:#F38B83;">qt_flag</span>，用到了QtPub的消息类型则必然为上位机控制
 * 同理, QtRecv消息类型中的<span style="color:#F38B83;">qt_flag</span>也可以删去
-* 
+
 <span style="color:#6687FF;">**Notice**</span>
 
 * 新增或删除消息类型时，要修改<span style="color:#F38B83;">CMakeLists.txt</span>文件中的<span style="color:#F38B83;">rosidl_generate_interfaces</span>部分
 
 ## <span style="color:#B885B0;">robot_kinematics</span>
 ### <span style="color:#8DB732;">robot_func.cpp</span>
+* 创建订阅者`subscriber_qt_cmd_`, 订阅`robot_interfaces/msg/QtRecv`类型的`qt_cmd`话题
+  <!-- 点击[协议解析](#protocol-description1)跳转到上位机和主控之间的协议说明. -->
+  `working_mode`: 
+
+  0x01: 拖拽示教功能开始录制机械臂姿态
+
+  0x02: 拖拽示教功能停止录制机械臂姿态
+
+  0x03: 拖拽示教功能重现录制轨迹
+
+  0x04: 机械臂使能
+
+  0x05: 机械臂失能
+
+  0x06: 机械臂急停
+
+  0x07: 机械臂回到初始姿态
+
+  0x08: 机械臂直线轨迹运动
+
+  0x09: 给定机械臂关节角度及夹爪信息
+
 ### <span style="color:#8DB732;">robot_state_get.cpp</span>
 目前使用的是<span style="color:#F38B83;">ArmState</span>类型的消息, 后续可直接换为<span style="color:#F38B83;">geometry_msgs/Pose</span>类型
 

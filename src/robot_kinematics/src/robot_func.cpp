@@ -78,7 +78,6 @@ class RobotFunctions : public rclcpp :: Node
                                                                             10, std::bind(&RobotFunctions::joint_state_callback, 
                                                                             this, std::placeholders::_1));
                         pub.working_mode = 1;
-                        pub.qt_flag = true;
                         publisher_->publish(pub);
                     }
                     break;
@@ -90,7 +89,6 @@ class RobotFunctions : public rclcpp :: Node
                         timer_.reset();
                         is_recording = false;
                         pub.working_mode = 2;
-                        pub.qt_flag = true;
                         publisher_->publish(pub);
                     }
                     break;
@@ -110,7 +108,6 @@ class RobotFunctions : public rclcpp :: Node
                     // 重现轨迹结束后需要将状态转移，不再重复执行
                     // msg->working_mode = 0x00;
                     pub.working_mode = 3;
-                    pub.qt_flag = true;
                     publisher_->publish(pub);
                     break;
                 }
@@ -120,7 +117,6 @@ class RobotFunctions : public rclcpp :: Node
                 // case 0x07:
                 {
                     pub.working_mode = msg->working_mode;
-                    pub.qt_flag = true;
                     pub.joint_group_positions = {0.0f};
                     publisher_->publish(pub);
                     break;
@@ -148,7 +144,6 @@ class RobotFunctions : public rclcpp :: Node
                     RCLCPP_INFO(this->get_logger(), "Plan (pose goal) %s", success ? "SUCCEED" : "FAILED");
                     
                     pub.working_mode = msg->working_mode;
-                    pub.qt_flag = true;
                     if (success) { 
                         const trajectory_msgs::msg::JointTrajectoryPoint& last_point = plan.trajectory_.joint_trajectory.points.back();
                         std_msgs::msg::Float64MultiArray inv_kin_msg;
@@ -178,6 +173,8 @@ class RobotFunctions : public rclcpp :: Node
                                                                         msg->joint_angles_goal.data[0], msg->joint_angles_goal.data[1], 
                                                                         msg->joint_angles_goal.data[2], msg->joint_angles_goal.data[3], 
                                                                         msg->joint_angles_goal.data[4], msg->joint_angles_goal.data[5]);
+                    RCLCPP_INFO(this->get_logger(), "received gripper goal: %d, %d, %d", 
+                                                                        msg->gripper_goal.data[0], msg->gripper_goal.data[1], msg->gripper_goal.data[2]);
                     pub.working_mode = msg->working_mode;
                     pub.qt_flag = true;
                     // 暂时只控制六个关节的值，不控制夹爪的值
