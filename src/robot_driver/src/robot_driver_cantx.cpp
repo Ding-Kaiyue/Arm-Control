@@ -4,9 +4,15 @@
 #include "ros2_socketcan/socket_can_sender.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 #include "robot_interfaces/msg/qt_pub.hpp"
+#include <iostream>
+#include <cstdint>
 
-#define POSITION_MODE 0x03
+#define POSITION_MODE 0x05
 #define SPEED_MODE 0x04
+#define MOTOR_ENABLE 0x01
+
+#define MOTOR_NUM 0x06
+#define CAN_FDB_ID 0x200
 
 using namespace drivers::socketcan;
 using std::placeholders::_1;
@@ -26,45 +32,57 @@ class SocketCanSenderNode : public rclcpp :: Node
     private:
         rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscriber_;
         rclcpp::Subscription<robot_interfaces::msg::QtPub>::SharedPtr subscriber_motor_states_;
-        
         rclcpp::TimerBase::SharedPtr timer_;
+        union FloatUintConverter {
+            float f;
+            uint32_t u;
+        };
+        
+        uint8_t motor_id = 0x01;
 
+        // rviz control
         void joint_pos_callback(const sensor_msgs::msg::JointState::SharedPtr msg) {
             for (size_t i = 0; i < msg->position.size(); i++) {
                 RCLCPP_INFO(this->get_logger(), "joint %lu: pos: %lf", i, msg->position[i]);
-                motor_req(i, POSITION_MODE, msg->position[i]);
+                motor_req(i+1, MOTOR_ENABLE, POSITION_MODE, msg->position[i]);
             }
         }
 
+        // QT control
         void motor_states_request_callback(const robot_interfaces::msg::QtPub::SharedPtr msg) {
-            // RCLCPP_INFO(this->get_logger(), "working mode: %d", msg->working_mode);
             for (size_t i = 0; i < msg->joint_group_positions.size(); i++) {
-                motor_req(i, POSITION_MODE, msg->joint_group_positions[i]);
+                motor_req(i+1, msg->enable_flag, POSITION_MODE, msg->joint_group_positions[i]);
+                std::this_thread::sleep_for(std::chrono::milliseconds(50));
             }
             gripper_req(msg->gripper_msgs[0], msg->gripper_msgs[1], msg->gripper_msgs[2]);
         }
 
-        void motor_req(uint8_t id, uint8_t motor_mode, const double data) {
+        void motor_req(uint16_t id, bool enable_flag, uint8_t motor_mode, const double data) {
             uint8_t tx_data[8] = {0};
             SocketCanSender sender("can0", false);
 
-            uint8_t* data_bytes = reinterpret_cast<uint8_t*>(const_cast<double*>(&data));
+            float data_f = (static_cast<float>(data)) * 180.0f / 3.141592654f;
+            FloatUintConverter converter;
+            converter.f = data_f;
+            RCLCPP_INFO(this->get_logger(), "%f", converter.f);
+            uint32_t data_uint32 = converter.u;
 
-            CanId canid(id, 0, FrameType::DATA, ExtendedFrame);
+            CanId canid(id, 0, FrameType::DATA, StandardFrame);
             tx_data[0] = 0x06;
-            tx_data[1] = 0x00;
+            tx_data[1] = (uint8_t)enable_flag;      
             tx_data[2] = motor_mode;
-            tx_data[3] = data_bytes[3];
-            tx_data[4] = data_bytes[2];
-            tx_data[5] = data_bytes[1];
-            tx_data[6] = data_bytes[0];
+            
+            tx_data[3] = data_uint32 >> 24;
+            tx_data[4] = data_uint32 >> 16;
+            tx_data[5] = data_uint32 >> 8;
+            tx_data[6] = data_uint32 && 0xFF;
             sender.send(tx_data, sizeof(tx_data), canid, std::chrono::seconds(1));
         }
 
         void gripper_req(uint8_t gripper_position, uint8_t gripper_velocity, uint8_t gripper_force) {
             uint8_t tx_data[3] = {0};
             SocketCanSender sender("can0", false);
-            CanId canid(0x3F, 0, FrameType::DATA, ExtendedFrame);       // 夹爪ID定为0x3F
+            CanId canid(0x3F, 0, FrameType::DATA, StandardFrame);       // 夹爪ID定为0x3F
             tx_data[0] = 0x3F;
             tx_data[1] = gripper_position;
             tx_data[2] = gripper_velocity;
@@ -72,15 +90,22 @@ class SocketCanSenderNode : public rclcpp :: Node
             sender.send(tx_data, sizeof(tx_data), canid, std::chrono::seconds(1));
         }
 
-        void motor_fdb() {
-            // uint8_t tx_data[8] = {0};
-            // SocketCanSender sender("can0", false);
-            // CanId canid(0x1F, 0, FrameType::DATA, ExtendedFrame);
-            // sender.send(tx_data, sizeof(tx_data), canid, std::chrono::seconds(1));
+        void motor_fdb(uint16_t id, uint8_t mode) {
+            uint8_t tx_data[2] = {0};
+            SocketCanSender sender("can0", false);
+
+            CanId canid(id, 0, FrameType::DATA, StandardFrame);
+            tx_data[0] = 0x01;
+            tx_data[1] = mode;
+            sender.send(tx_data, sizeof(tx_data), canid, std::chrono::seconds(1));
         }
 
         void timer_callback() {
-            motor_fdb();
+            motor_fdb(CAN_FDB_ID+motor_id, POSITION_MODE);
+            motor_id++;
+            if (motor_id > MOTOR_NUM) {
+                motor_id = 0x01;
+            }
         }
 };
 

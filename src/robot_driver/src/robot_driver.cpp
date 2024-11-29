@@ -91,11 +91,7 @@ class JointPosPub : public rclcpp :: Node
 
         void motor_states_request_callback(const robot_interfaces::msg::QtPub::SharedPtr msg) {
             RCLCPP_INFO(this->get_logger(), "working mode: %d", msg->working_mode);
-            if (msg->qt_flag == true) {
-                qt_flag = true;
-            } else {
-                qt_flag = false;
-            }
+
             working_mode = msg->working_mode;
             sendData(msg->joint_group_positions);
         }

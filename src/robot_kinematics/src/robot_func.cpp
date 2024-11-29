@@ -60,6 +60,7 @@ class RobotFunctions : public rclcpp :: Node
 
         std::shared_ptr<moveit::planning_interface::MoveGroupInterface> arm;
         std::vector<double> joint_group_positions, current_joint_positions;
+        std::vector<uint8_t> gripper_msgs;
         std::vector<std::vector<double>> recorded_joint_values;
         bool is_recording = false;
 
@@ -111,13 +112,28 @@ class RobotFunctions : public rclcpp :: Node
                     publisher_->publish(pub);
                     break;
                 }
-                case 0x04: 
-                case 0x05:
-                case 0x06:
-                // case 0x07:
-                {
+                case 0x04: {
+                    pub.working_mode = msg->working_mode;
+                    pub.enable_flag = true;
+                    pub.joint_group_positions = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+                    pub.gripper_msgs = {0, 100, 20};
+                    publisher_->publish(pub);
+                    RCLCPP_INFO(this->get_logger(), "Enable flag is sent");
+                    break;
+                }
+                case 0x05: {
+                    pub.working_mode = msg->working_mode;
+                    pub.enable_flag = false;
+                    pub.joint_group_positions = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+                    pub.gripper_msgs = {0, 100, 20};
+                    publisher_->publish(pub);
+                    RCLCPP_INFO(this->get_logger(), "Disable flag is sent");
+                    break;
+                }
+                case 0x06: {
                     pub.working_mode = msg->working_mode;
                     pub.joint_group_positions = {0.0f};
+                    pub.gripper_msgs = {0, 100, 20};
                     publisher_->publish(pub);
                     break;
                 }
@@ -176,13 +192,19 @@ class RobotFunctions : public rclcpp :: Node
                     RCLCPP_INFO(this->get_logger(), "received gripper goal: %d, %d, %d", 
                                                                         msg->gripper_goal.data[0], msg->gripper_goal.data[1], msg->gripper_goal.data[2]);
                     pub.working_mode = msg->working_mode;
-                    pub.qt_flag = true;
-                    // 暂时只控制六个关节的值，不控制夹爪的值
+                    pub.enable_flag = true;
                     joint_group_positions.resize(6);
-                    for (size_t i = 0; i < 6; i++) {
+                    gripper_msgs.resize(3);
+                    for (int i = 0; i < 6; i++) {
                         joint_group_positions[i] = static_cast<double>(msg->joint_angles_goal.data[i] * M_PI / 180.0);
+                        RCLCPP_INFO(this->get_logger(), "Joint group positions [%d]: %lf", i+1, joint_group_positions[i]);
+                    }
+                    for (int i = 0; i < 3; i++) {
+                        gripper_msgs[i] = msg->gripper_goal.data[i];
+                        RCLCPP_INFO(this->get_logger(), "Gripper msgs [%d]: [%d]", i, gripper_msgs[i]);
                     }
                     pub.joint_group_positions = joint_group_positions;
+                    pub.gripper_msgs = gripper_msgs;
                     publisher_->publish(pub);
                     // ************** For Test **************
                     arm->setJointValueTarget(joint_group_positions);

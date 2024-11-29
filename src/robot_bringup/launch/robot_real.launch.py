@@ -24,6 +24,9 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_qtrecv'), 'launch', 'robot_tcp_server.launch.py'))
     )
 
+    robot_func = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_kinematics'), 'launch', 'robot_func.launch.py'))
+    )
     robot_description = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_description'), 'launch', 'robot_display.launch.py'))
     )
@@ -40,6 +43,7 @@ def generate_launch_description():
     return LaunchDescription([
         robot_driver_cantx,
         robto_tcp_server,
+        robot_func,
         robot_description,
         robot_control,
         robot_moveit_config,

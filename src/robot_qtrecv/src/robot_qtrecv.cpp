@@ -42,15 +42,12 @@ class QtMessageProcessor : public rclcpp :: Node
                 if (qt_ser.isOpen()) {
                     RCLCPP_INFO(this->get_logger(), "serial port is open");
                     receive_thread = std::thread(&QtMessageProcessor::receive_qt_data, this);
-                    qt_cmd.qt_flag = true;
                 } else {
                     RCLCPP_INFO(this->get_logger(), "serial port error");
-                    qt_cmd.qt_flag = false;
                 }
                 publisher_->publish(qt_cmd);
             } catch (const std::exception &e) {
                 RCLCPP_ERROR(this->get_logger(), "Exception opening serial port: %s", e.what());
-                qt_cmd.qt_flag = false;
                 publisher_->publish(qt_cmd);
             }
         }
@@ -68,7 +65,6 @@ class QtMessageProcessor : public rclcpp :: Node
             {
                 if (qt_ser.isOpen()) {
                     qt_ser.close();
-                    qt_cmd.qt_flag = false;
                 }
                 publisher_->publish(qt_cmd);
             }

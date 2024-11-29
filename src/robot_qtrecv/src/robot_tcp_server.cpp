@@ -126,6 +126,7 @@ class TcpServer : public rclcpp::Node
                 case 0x00: {    // Functions
                     qt_cmd.working_mode = data[3];
                     publisher_->publish(qt_cmd);
+                    RCLCPP_INFO(this->get_logger(), "Mode: %d", qt_cmd.working_mode);
                     break;
                 }
                 case 0x01: {    // z
@@ -247,7 +248,7 @@ class TcpServer : public rclcpp::Node
                     RCLCPP_INFO(this->get_logger(), "%d, %d, %d", data[7], data[8], data[9]);
 
                     qt_cmd.joint_angles_goal.data = {data[1], data[2], data[3], data[4], data[5], data[6]};
-
+                    qt_cmd.gripper_goal.data = {data[7], data[8], data[9]};
                     qt_cmd.working_mode = 0x09;
                     publisher_->publish(qt_cmd);                            
                     break;

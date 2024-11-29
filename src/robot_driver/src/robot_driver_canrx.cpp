@@ -4,6 +4,7 @@
 #include "ros2_socketcan/socket_can_receiver.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 
+#define CAN_FDB_ID 0x200
 
 using namespace drivers::socketcan;
 
