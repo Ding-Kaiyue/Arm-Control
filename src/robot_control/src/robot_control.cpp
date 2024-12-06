@@ -278,7 +278,7 @@ RobotControl::RobotControl(std::string name) : Node(name)
                 std::bind(&RobotControl::handle_accepted, this, _1));
     joint_pos_publisher = this->create_publisher<sensor_msgs::msg::JointState>("motor_cmd", 10);
 
-    joint_pos_publisher->publish(joint_msg);
+    // joint_pos_publisher->publish(joint_msg);
 }
 
 rclcpp_action::GoalResponse RobotControl::handle_goal(const rclcpp_action::GoalUUID &uuid, std::shared_ptr<const FollowJointTrajectory::Goal> goal)

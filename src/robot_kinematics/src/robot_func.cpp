@@ -26,13 +26,14 @@ class RobotFunctions : public rclcpp :: Node
     public:
         RobotFunctions(const std::string& node_name) : Node(node_name)
         {
+            RCLCPP_INFO(this->get_logger(), "robot_func node has been started!");
             subscriber_qt_cmd_ = this->create_subscription<robot_interfaces::msg::QtRecv>("qt_cmd", 
                                                             10, std::bind(&RobotFunctions::working_mode_callback,
                                                             this, std::placeholders::_1));
             // 对真实机械臂使用这段实时获取当前关节位置
-            // subscriber_joint_state_ = this->create_subscription<sensor_msgs::msg::JointState>("joint_states", 
-            //                                                 10, std::bind(&RobotFunctions::joint_state_callback, 
-            //                                                 this, std::placeholders::_1));
+            subscriber_joint_state_ = this->create_subscription<sensor_msgs::msg::JointState>("joint_states", 
+                                                            10, std::bind(&RobotFunctions::joint_state_callback, 
+                                                            this, std::placeholders::_1));
             publisher_ = this->create_publisher<robot_interfaces::msg::QtPub>("motor_states_req", 10);
             
             arm = std::make_shared<moveit::planning_interface::MoveGroupInterface>(rclcpp::Node::SharedPtr(this), std::string("arm"));
@@ -59,13 +60,14 @@ class RobotFunctions : public rclcpp :: Node
         // rclcpp::Subscription<robot_interfaces::msg::ArmState>::SharedPtr subscriber_states_;
 
         std::shared_ptr<moveit::planning_interface::MoveGroupInterface> arm;
-        std::vector<double> joint_group_positions, current_joint_positions;
+        std::vector<double> joint_group_positions, current_joint_positions, current_joint_efforts;
         std::vector<uint8_t> gripper_msgs;
         std::vector<std::vector<double>> recorded_joint_values;
         bool is_recording = false;
 
         void working_mode_callback(const robot_interfaces::msg::QtRecv::SharedPtr msg)
         {
+            RCLCPP_INFO(this->get_logger(), "qt_cmd topic has been received");
             robot_interfaces::msg::QtPub pub;
             switch (msg->working_mode) {
                 case 0x01: {
@@ -86,7 +88,7 @@ class RobotFunctions : public rclcpp :: Node
                 case 0x02: {
                     if (is_recording) {
                         RCLCPP_INFO(this->get_logger(), "Stop Recording the arm position!");                         
-                        subscriber_joint_state_.reset();
+                        // subscriber_joint_state_.reset();
                         timer_.reset();
                         is_recording = false;
                         pub.working_mode = 2;
@@ -115,7 +117,9 @@ class RobotFunctions : public rclcpp :: Node
                 case 0x04: {
                     pub.working_mode = msg->working_mode;
                     pub.enable_flag = true;
-                    pub.joint_group_positions = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+                    for (uint8_t i = 0; i < 6; i++) {
+                        pub.joint_group_positions[i] = current_joint_positions[i];
+                    }
                     pub.gripper_msgs = {0, 100, 20};
                     publisher_->publish(pub);
                     RCLCPP_INFO(this->get_logger(), "Enable flag is sent");
@@ -124,13 +128,15 @@ class RobotFunctions : public rclcpp :: Node
                 case 0x05: {
                     pub.working_mode = msg->working_mode;
                     pub.enable_flag = false;
-                    pub.joint_group_positions = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+                    for (uint8_t i = 0; i < 6; i++) {
+                        pub.joint_group_positions[i] = current_joint_positions[i];
+                    }
                     pub.gripper_msgs = {0, 100, 20};
                     publisher_->publish(pub);
                     RCLCPP_INFO(this->get_logger(), "Disable flag is sent");
                     break;
                 }
-                case 0x06: {
+                case 0x06: {        // Stop: The motors should at velocity mode. And the goal velocities should be zero
                     pub.working_mode = msg->working_mode;
                     pub.joint_group_positions = {0.0f};
                     pub.gripper_msgs = {0, 100, 20};
@@ -222,16 +228,16 @@ class RobotFunctions : public rclcpp :: Node
         {
             std::vector<std::string> joint_names = {"joint1", "joint2", "joint3", "joint4", "joint5", "joint6"};
             current_joint_positions.resize(joint_names.size(), 0.0);
+            current_joint_efforts.resize(joint_names.size(), 0.0);
             for (size_t i = 0; i < msg->name.size(); ++i) {
                 for (size_t j = 0; j < joint_names.size(); ++j) {
                     if (msg->name[i] == joint_names[j]) {
                         current_joint_positions[j] = msg->position[i];
+                        current_joint_efforts[i] = msg->effort[i];
                         break;
                     }
                 }
             }
-            // 实体机械臂采集关节电机速度，当速度停止时，将此刻的位置存入其中，此时的current_joint_velocities和current_joint_positions应该是电机反馈的数据
-            
         }
 
         void timer_callback()

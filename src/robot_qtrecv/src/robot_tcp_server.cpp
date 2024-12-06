@@ -250,7 +250,9 @@ class TcpServer : public rclcpp::Node
                     qt_cmd.joint_angles_goal.data = {data[1], data[2], data[3], data[4], data[5], data[6]};
                     qt_cmd.gripper_goal.data = {data[7], data[8], data[9]};
                     qt_cmd.working_mode = 0x09;
-                    publisher_->publish(qt_cmd);                            
+                    qt_cmd.arm_pose_goal = end_effector_pose;
+                    publisher_->publish(qt_cmd);       
+                    RCLCPP_INFO(this->get_logger(), "qt_cmd topic has been published");
                     break;
                 }
                 default:
