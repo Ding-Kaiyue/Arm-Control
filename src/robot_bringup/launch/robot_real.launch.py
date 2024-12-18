@@ -32,6 +32,10 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_kinematics'), 'launch', 'robot_func.launch.py'))
     )
 
+    robot_current_state_get = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_kinematics'), 'launch', 'robot_state_get.launch.py'))
+    )
+
     robot_description = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(get_package_share_directory('robot_description'), 'launch', 'robot_display.launch.py'))
     )
@@ -50,6 +54,7 @@ def generate_launch_description():
         robot_driver_canrx,
         robto_tcp_server,
         robot_func,
+        robot_current_state_get,
         robot_description,
         robot_control,
         robot_moveit_config,

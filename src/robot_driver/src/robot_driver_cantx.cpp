@@ -46,6 +46,7 @@ class SocketCanSenderNode : public rclcpp :: Node
         void joint_pos_callback(const sensor_msgs::msg::JointState::SharedPtr msg) {
             for (size_t i = 0; i < msg->position.size(); i++) {
                 motor_req(i+1, MOTOR_ENABLE, POSITION_MODE, msg->position[i]);
+                std::this_thread::sleep_for(std::chrono::milliseconds(50));
             }
         }
 
@@ -60,6 +61,7 @@ class SocketCanSenderNode : public rclcpp :: Node
             } else {
                 for (size_t i = 0; i < msg->joint_group_positions.size(); i++) {
                     motor_req(i+1, msg->enable_flag, SPEED_MODE, 0.0f);
+                    std::this_thread::sleep_for(std::chrono::milliseconds(50));
                 }
             }
         }
@@ -85,14 +87,14 @@ class SocketCanSenderNode : public rclcpp :: Node
             sender.send(tx_data, sizeof(tx_data), canid, std::chrono::seconds(1));
         }
 
-        void gripper_req(uint8_t gripper_position, uint8_t gripper_velocity, uint8_t gripper_force) {
-            uint8_t tx_data[3] = {0};
+        void gripper_req(uint8_t gripper_position, uint8_t gripper_velocity, uint8_t gripper_effort) {
+            uint8_t tx_data[8] = {0};
             SocketCanSender sender("can0", false);
             CanId canid(0x3F, 0, FrameType::DATA, StandardFrame);       // 夹爪ID定为0x3F
-            tx_data[0] = 0x3F;
+            tx_data[0] = 0x03;
             tx_data[1] = gripper_position;
             tx_data[2] = gripper_velocity;
-            tx_data[3] = gripper_force;
+            tx_data[3] = gripper_effort;
             sender.send(tx_data, sizeof(tx_data), canid, std::chrono::seconds(1));
         }
 

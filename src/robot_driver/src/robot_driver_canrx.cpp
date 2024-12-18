@@ -61,10 +61,12 @@ class SocketCanReceiverNode : public rclcpp :: Node
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_angle_fdb[0] = converter.f;
                                 receive_flag_pos[0] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor1 pos feedback");
                             } else if (motor_fdb_raw.motor_fdb_mode[0] == EFFORT_MODE) {
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_effort_fdb[0] = converter.f;
                                 receive_flag_effort[0] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor1 effort feedback");
                             }
                             break;
                         }
@@ -75,10 +77,12 @@ class SocketCanReceiverNode : public rclcpp :: Node
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_angle_fdb[1] = converter.f;
                                 receive_flag_pos[1] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor2 pos feedback");
                             } else if (motor_fdb_raw.motor_fdb_mode[1] == EFFORT_MODE) {
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_effort_fdb[1] = converter.f;
                                 receive_flag_effort[1] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor2 effort feedback");
                             }
                             break;
                         }
@@ -89,10 +93,12 @@ class SocketCanReceiverNode : public rclcpp :: Node
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_angle_fdb[2] = converter.f;
                                 receive_flag_pos[2] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor3 pos feedback");
                             } else if (motor_fdb_raw.motor_fdb_mode[2] == EFFORT_MODE) {
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_effort_fdb[2] = converter.f;
                                 receive_flag_effort[2] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor3 effort feedback");
                             }
                             break;
                         }
@@ -103,10 +109,12 @@ class SocketCanReceiverNode : public rclcpp :: Node
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_angle_fdb[3] = converter.f;
                                 receive_flag_pos[3] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor4 pos feedback");
                             } else if (motor_fdb_raw.motor_fdb_mode[3] == EFFORT_MODE) {
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_effort_fdb[3] = converter.f;
                                 receive_flag_effort[3] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor4 effort feedback");
                             }
                             break;
                         }
@@ -117,10 +125,12 @@ class SocketCanReceiverNode : public rclcpp :: Node
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_angle_fdb[4] = converter.f;
                                 receive_flag_pos[4] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor5 pos feedback");
                             } else if (motor_fdb_raw.motor_fdb_mode[4] == EFFORT_MODE) {
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_effort_fdb[4] = converter.f;
                                 receive_flag_effort[4] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor5 effort feedback");
                             }
                             break;
                         }
@@ -131,10 +141,12 @@ class SocketCanReceiverNode : public rclcpp :: Node
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_angle_fdb[5] = converter.f;
                                 receive_flag_pos[5] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor6 pos feedback");
                             } else if (motor_fdb_raw.motor_fdb_mode[5] == EFFORT_MODE) {
                                 converter.u = (data[4] << 24) | (data[5] << 16) | (data[6] << 8) | (data[7] & 0xFF);
                                 motor_fdb_raw.motor_effort_fdb[5] = converter.f;
                                 receive_flag_effort[5] = true;
+                                // RCLCPP_INFO(this->get_logger(), "Motor6 effort feedback");
                             }
                             break;
                         }
@@ -147,7 +159,7 @@ class SocketCanReceiverNode : public rclcpp :: Node
                         && receive_flag_effort[3] == true && receive_flag_effort[4] == true && receive_flag_effort[5] == true) {
                             motor_message_feedback(motor_fdb_raw.motor_angle_fdb, motor_fdb_raw.motor_effort_fdb);
                     }
-                } 
+               } 
                 catch (const SocketCanTimeout & e) {
                     RCLCPP_ERROR(this->get_logger(), "Timeout: %s", e.what());
                 } 
@@ -200,10 +212,10 @@ class SocketCanReceiverNode : public rclcpp :: Node
             joint_state_fdb.effort[4] = (double)effort_data[4];
             joint_state_fdb.effort[5] = (double)effort_data[5];
             
-            RCLCPP_INFO(this->get_logger(), "Motor angle feedback: %f, %f, %f, %f, %f, %f", 
-                                                    joint_state_fdb.position[0], joint_state_fdb.position[1],
-                                                    joint_state_fdb.position[2], joint_state_fdb.position[3], 
-                                                    joint_state_fdb.position[4], joint_state_fdb.position[5]);
+            // RCLCPP_INFO(this->get_logger(), "Motor angle feedback: %f, %f, %f, %f, %f, %f", 
+            //                                         joint_state_fdb.position[0], joint_state_fdb.position[1],
+            //                                         joint_state_fdb.position[2], joint_state_fdb.position[3], 
+            //                                         joint_state_fdb.position[4], joint_state_fdb.position[5]);
             publisher_->publish(joint_state_fdb);
 
             for (uint8_t i = 0; i < 6; i++) {

@@ -14,13 +14,14 @@ find_package(message_filters REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(robot_interfaces REQUIRED)
 
 add_executable(robot_qtrecv src/robot_qtrecv.cpp)
 ament_target_dependencies(robot_qtrecv rclcpp std_msgs message_filters serial tf2_ros tf2_geometry_msgs geometry_msgs robot_interfaces)
 
 add_executable(robot_tcp_server src/robot_tcp_server.cpp)
-ament_target_dependencies(robot_tcp_server rclcpp std_msgs message_filters tf2_ros tf2_geometry_msgs geometry_msgs robot_interfaces)
+ament_target_dependencies(robot_tcp_server rclcpp std_msgs message_filters tf2_ros tf2_geometry_msgs geometry_msgs sensor_msgs robot_interfaces)
 
 install(TARGETS
     robot_qtrecv

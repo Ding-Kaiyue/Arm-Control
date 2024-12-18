@@ -56,6 +56,7 @@ class RobotFunctions : public rclcpp :: Node
         rclcpp::Subscription<robot_interfaces::msg::QtRecv>::SharedPtr subscriber_qt_cmd_;
         rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscriber_joint_state_;
         rclcpp::Publisher<robot_interfaces::msg::QtPub>::SharedPtr publisher_;
+        rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr publisher_plan_state_;    // successfully or unsuccessfully 
         rclcpp::TimerBase::SharedPtr timer_;
         // rclcpp::Subscription<robot_interfaces::msg::ArmState>::SharedPtr subscriber_states_;
 
@@ -166,14 +167,23 @@ class RobotFunctions : public rclcpp :: Node
                     RCLCPP_INFO(this->get_logger(), "Plan (pose goal) %s", success ? "SUCCEED" : "FAILED");
                     
                     pub.working_mode = msg->working_mode;
+                    pub.enable_flag = true;
+                    gripper_msgs.resize(3);
                     if (success) { 
                         const trajectory_msgs::msg::JointTrajectoryPoint& last_point = plan.trajectory_.joint_trajectory.points.back();
                         std_msgs::msg::Float64MultiArray inv_kin_msg;
                         inv_kin_msg.data.resize(last_point.positions.size());
-                        for (size_t i = 0; i < last_point.positions.size(); i++) {
+                        RCLCPP_INFO(this->get_logger(), "inv_kin_msg.data.size = %ld", inv_kin_msg.data.size());
+                        for (size_t i = 0; i < inv_kin_msg.data.size(); i++) {
                             inv_kin_msg.data[i] = last_point.positions[i];
+                            RCLCPP_INFO(this->get_logger(), "inv_kin_msg.data[%ld]: %lf", i, inv_kin_msg.data[i]);
+                        }
+                        for (int i = 0; i < 3; i++) {
+                            gripper_msgs[i] = msg->gripper_goal.data[i];
+                            RCLCPP_INFO(this->get_logger(), "Gripper msgs [%d]: [%d]", i, gripper_msgs[i]);
                         }
                         pub.joint_group_positions = inv_kin_msg.data;
+                        pub.gripper_msgs = gripper_msgs;
                         publisher_->publish(pub);
                         // 此时应该给上位机反馈规划成功标志
                         // ************** For Test **************
@@ -191,12 +201,6 @@ class RobotFunctions : public rclcpp :: Node
                         RCLCPP_WARN(this->get_logger(), "Received joint goal with incorrect size: %zu", msg->joint_angles_goal.data.size());
                         return;
                     }
-                    RCLCPP_INFO(this->get_logger(), "received joint goal: %d, %d, %d, %d, %d, %d", 
-                                                                        msg->joint_angles_goal.data[0], msg->joint_angles_goal.data[1], 
-                                                                        msg->joint_angles_goal.data[2], msg->joint_angles_goal.data[3], 
-                                                                        msg->joint_angles_goal.data[4], msg->joint_angles_goal.data[5]);
-                    RCLCPP_INFO(this->get_logger(), "received gripper goal: %d, %d, %d", 
-                                                                        msg->gripper_goal.data[0], msg->gripper_goal.data[1], msg->gripper_goal.data[2]);
                     pub.working_mode = msg->working_mode;
                     pub.enable_flag = true;
                     joint_group_positions.resize(6);
@@ -216,6 +220,26 @@ class RobotFunctions : public rclcpp :: Node
                     arm->setJointValueTarget(joint_group_positions);
                     arm->move();
                     // ************** For Test **************
+                    break;
+                }
+                case 0x0A: {
+                    joint_group_positions.resize(6);
+                    for (size_t i = 0; i < 6; i++) {
+                        joint_group_positions[i] = 0.0f;
+                    }
+                    // 写入关节值(for gazebo)正式版本删除在gazebo中控制的内容
+                    arm->setJointValueTarget(joint_group_positions);
+                    arm->move();
+                    break;
+                }
+                case 0x0B: {
+                    joint_group_positions.resize(6);
+                    for (size_t i = 0; i < 6; i++) {
+                        joint_group_positions[i] = 0.0f;
+                    }
+                    // 写入关节值(for gazebo)正式版本删除在gazebo中控制的内容
+                    arm->setJointValueTarget(joint_group_positions);
+                    arm->move();
                     break;
                 }
                 default: {

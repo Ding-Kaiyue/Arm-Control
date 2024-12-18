@@ -30,7 +30,7 @@ ament_target_dependencies(robot_driver_canrx rclcpp can_msgs ros2_socketcan sens
 install(TARGETS
     robot_driver
     robot_driver_cantx
-    robot_driver_canrx
+    robot_driver_canrx 
     DESTINATION lib/${PROJECT_NAME}
 )
 

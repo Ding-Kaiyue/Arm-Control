@@ -106,7 +106,7 @@ class QtMessageProcessor : public rclcpp :: Node
                             qt_cmd.working_mode = 0x07;
                             qt_cmd.arm_pose_goal.position = end_effector_pose.position;
                             qt_cmd.arm_pose_goal.orientation = end_effector_pose.orientation;
-
+                            qt_cmd.gripper_goal.data = {qt_cmd_raw.data[4], qt_cmd_raw.data[5], qt_cmd_raw.data[6]};
                             if (qt_cmd_raw.data[1] == 0x01) {           // Position                  
                                 if (qt_cmd_raw.data[2] == 0x01) {           // +
                                     RCLCPP_INFO(this->get_logger(), "zpos+%d", qt_cmd_raw.data[3]);                                    
