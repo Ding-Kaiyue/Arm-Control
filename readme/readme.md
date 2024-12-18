@@ -1,15 +1,19 @@
 # <span style="color:#FCDB72;">使用说明</span>
 ```
 cd src/
+rm -rf ros2_socketcan/
 git clone http://github.com/autowarfoundation/ros2_socketcan.git
+colcon build --packages-select robot_interfaces
+source install/setup.bash
 colcon build --packages-select ros2_socketcan_msgs
 colcon build --packages-select ros2_socketcan
+source install/setup.bash
 colcon build
 source install/setup.bash
 ros2 launch robot_xxx.launch.py
 ```
 ## <span style="color:#B885B0;">ID设置</span>
-Joint1~Joint6的关节电机控制ID设置为0x201~0x206，反馈ID设置为0x601~0x606
+Joint1 ~ Joint6的关节电机控制ID设置为0x201 ~ 0x206，反馈ID设置为0x301 ~ 0x306
 
 Gripper的ID设置为0x03F, 没有反馈(暂)
 
@@ -30,15 +34,15 @@ Gripper的ID设置为0x03F, 没有反馈(暂)
 |--------|---------|---------|
 |  0x201 |   0x01  |0x04(vel)|
 |        |   0x01  |0x05(pos)|
-|        |   0x01  |0x02(for)|
+|        |   0x01  |0x02(effort)|
 
-| ID_ret | Data[0] | Data[1] | Data[2] | Data[3] | Data[4] | Data[5] | Data[6] | 
-|--------|---------|---------|---------|---------|---------|---------|---------|
-|  0x301 |   0x16  | 0x01(en)|0x04(vel)| value[0]| value[1]| value[2]| value[3]|
-|        |         |         |0x05(pos)| value[0]| value[1]| value[2]| value[3]|
-|        |         |         |0x02(for)| value[0]| value[1]| value[2]| value[3]|
+| ID_ret | Data[0] | Data[1] | Data[2] | Data[3] | Data[4] | Data[5] | Data[6] | Data[7] |
+|--------|---------|---------|---------|---------|---------|---------|---------|---------|
+|  0x301 |   0x16  | 0x01(en)|0x05(pos)|0x04(vel)| value[0]| value[1]| value[2]| value[3]|
+|        |         |         |         |0x05(pos)| value[0]| value[1]| value[2]| value[3]|
+|        |         |         |         |0x02(effort)| value[0]| value[1]| value[2]| value[3]|
 
-# <span style="color:#FCDB72;">功能包说明</span>
+# <span style="color:#FCDB72;">功能包说明</span>  
 ## <span style="color:#B885B0;">robot_bringup</span>
 该功能包是launch文件的集合，其中带gazebo的是仿真文件
 ### <span style="color:#8DB732;">robot_gazebo.launch.py</span>
@@ -109,12 +113,7 @@ float32 radius                      # 0: without any meaning  1: radius of the c
 ### <span style="color:#8DB732;">QtPub.msg</span>
 ```
 uint8 working_mode                      # 机械臂工作模式
-bool qt_flag                            # 是否使用上位机控制
-# -------------- Cartesian Space Planning --------------
-trajectory_msgs/JointTrajectory trajectory         # 关节位置轨迹点个数
-trajectory_msgs/JointTrajectoryPoint point   # 关节位置轨迹
-uint16 delta_time                       # 插值周期
-
+bool enable_flag                            # 是否使能
 # ---------------- Joint Space Planning ----------------
 float64[] joint_group_positions     # 机械臂目标关节位置
 ```
@@ -138,8 +137,8 @@ geometry_msgs/Pose arm_pose_goal                    # 机械臂目标姿态
 ## <span style="color:#B885B0;">robot_kinematics</span>
 ### <span style="color:#8DB732;">robot_func.cpp</span>
 * 创建订阅者`subscriber_qt_cmd_`, 订阅`robot_interfaces/msg/QtRecv`类型的`qt_cmd`话题
-  <!-- 点击[协议解析](#protocol-description1)跳转到上位机和主控之间的协议说明. -->
-  `working_mode`: 
+  <!-- 点击[协议解析](#protocol-description1)跳转到上位机和主控之间的协议说明.-->
+  `working_mode`:  
 
   0x01: 拖拽示教功能开始录制机械臂姿态
 
@@ -162,4 +161,9 @@ geometry_msgs/Pose arm_pose_goal                    # 机械臂目标姿态
 ### <span style="color:#8DB732;">robot_state_get.cpp</span>
 目前使用的是<span style="color:#F38B83;">ArmState</span>类型的消息, 后续可直接换为<span style="color:#F38B83;">geometry_msgs/Pose</span>类型
 
+## <span style="color:#B885B0;">robot_qtrecv</span>
+### <span style="color:#8DB732;">robot_qtrecv.cpp</span>
+串口连接上位机和机械臂，已弃用(后续删除)
+### <span style="color:#8DB732;">robot_tcp_server.cpp</span>
+作为TCP服务器连接上位机，监听任意IP的8899端口，随时建立连接，将上位机的命令发布到`qt_cmd`话题
 
