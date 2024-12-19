@@ -56,7 +56,7 @@ class RobotFunctions : public rclcpp :: Node
         rclcpp::Subscription<robot_interfaces::msg::QtRecv>::SharedPtr subscriber_qt_cmd_;
         rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscriber_joint_state_;
         rclcpp::Publisher<robot_interfaces::msg::QtPub>::SharedPtr publisher_;
-        rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr publisher_plan_state_;    // successfully or unsuccessfully 
+        rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr publisher_plan_result_;    // successfully or unsuccessfully 
         rclcpp::TimerBase::SharedPtr timer_;
         // rclcpp::Subscription<robot_interfaces::msg::ArmState>::SharedPtr subscriber_states_;
 
@@ -190,13 +190,13 @@ class RobotFunctions : public rclcpp :: Node
                         // ************** For Test **************
                         arm->execute(plan); 
                         plan_result.data = true;
-                        publisher_plan_result_->publisher(plan_result);
+                        publisher_plan_result_->publish(plan_result);
                         // ************** For Test **************
                     } else {
                         RCLCPP_INFO(this->get_logger(), "No valid plan found! ");
                         // 此时应该给上位机反馈规划失败标志
                         plan_result.data = false;
-                        publisher_plan_result_->publisher(plan_result);
+                        publisher_plan_result_->publish(plan_result);
                     }
                     break;
                 }
