@@ -1,8 +1,0 @@
-{
-  "package_name": "robot_interfaces",
-  "non_idl_tuples": [
-    "/home/dky/Projects/dky_robot/src/robot_interfaces:msg/QtRecv.msg",
-    "/home/dky/Projects/dky_robot/src/robot_interfaces:msg/LineMsg.msg",
-    "/home/dky/Projects/dky_robot/src/robot_interfaces:msg/ArmState.msg"
-  ]
-}
