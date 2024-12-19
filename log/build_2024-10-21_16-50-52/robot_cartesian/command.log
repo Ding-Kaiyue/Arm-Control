@@ -1,1 +1,0 @@
-Invoking command in '/home/dky/Projects/dky_robot/build/robot_cartesian': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dky/Projects/dky_robot/build/robot_cartesian -- -j20 -l20

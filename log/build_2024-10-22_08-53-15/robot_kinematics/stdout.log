@@ -1,8 +1,0 @@
-[ 12%] [32mBuilding CXX object CMakeFiles/robot_func.dir/src/robot_func.cpp.o[0m
-[ 37%] Built target robot_state_get
-[ 50%] [32mBuilding CXX object CMakeFiles/robot_fk.dir/src/robot_fk.cpp.o[0m
-[ 62%] [32mBuilding CXX object CMakeFiles/robot_ik.dir/src/robot_ik.cpp.o[0m
-[ 75%] [32m[1mLinking CXX executable robot_func[0m
-[ 75%] Built target robot_func
-[ 87%] [32m[1mLinking CXX executable robot_ik[0m
-[ 87%] Built target robot_ik

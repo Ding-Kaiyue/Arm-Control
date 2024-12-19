@@ -1,1 +1,0 @@
-Invoking command in '/home/dky/Projects/dky_robot/build/robot_cartesian': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dky/Projects/dky_robot/src/robot_cartesian -DCMAKE_INSTALL_PREFIX=/home/dky/Projects/dky_robot/install/robot_cartesian

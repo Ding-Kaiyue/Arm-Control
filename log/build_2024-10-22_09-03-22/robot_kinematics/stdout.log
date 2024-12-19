@@ -1,7 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target robot_func[0m
-[35m[1mConsolidate compiler generated dependencies of target robot_ik[0m
-[35m[1mConsolidate compiler generated dependencies of target robot_fk[0m
-[ 25%] Built target robot_state_get
-[ 50%] Built target robot_func
-[ 75%] Built target robot_ik
-[ 87%] [32mBuilding CXX object CMakeFiles/robot_fk.dir/src/robot_fk.cpp.o[0m
