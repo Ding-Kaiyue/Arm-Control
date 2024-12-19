@@ -35,7 +35,7 @@ class RobotFunctions : public rclcpp :: Node
                                                             10, std::bind(&RobotFunctions::joint_state_callback, 
                                                             this, std::placeholders::_1));
             publisher_ = this->create_publisher<robot_interfaces::msg::QtPub>("motor_states_req", 10);
-            
+            publisher_plan_result_ = this->create_publisher<std_msgs::msg::Bool>("plan_result", 10);
             arm = std::make_shared<moveit::planning_interface::MoveGroupInterface>(rclcpp::Node::SharedPtr(this), std::string("arm"));
 
             recorded_joint_values.clear();
@@ -157,6 +157,7 @@ class RobotFunctions : public rclcpp :: Node
                 }
                 case 0x08: {
                     RCLCPP_INFO(this->get_logger(), "Start robot_ik mode");
+                    std_msgs::msg::Bool plan_result;
                     // 由于上位机控制均为直线运动，moveit规划不出来三个以上有效路点，不能进行插值，应直接按照计算得出的结果赋值
                     arm->setStartStateToCurrentState();
                     arm->setPoseTarget(msg->arm_pose_goal, arm->getEndEffectorLink());
@@ -188,10 +189,14 @@ class RobotFunctions : public rclcpp :: Node
                         // 此时应该给上位机反馈规划成功标志
                         // ************** For Test **************
                         arm->execute(plan); 
+                        plan_result.data = true;
+                        publisher_plan_result_->publisher(plan_result);
                         // ************** For Test **************
                     } else {
                         RCLCPP_INFO(this->get_logger(), "No valid plan found! ");
                         // 此时应该给上位机反馈规划失败标志
+                        plan_result.data = false;
+                        publisher_plan_result_->publisher(plan_result);
                     }
                     break;
                 }

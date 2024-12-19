@@ -8,9 +8,10 @@
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include "geometry_msgs/msg/quaternion.hpp"
-#include "robot_interfaces/msg/qt_recv.hpp"
-#include "robot_interfaces/msg/arm_state.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
+#include "std_msgs/msg/bool.hpp"
+#include "robot_interfaces/msg/qt_recv.hpp"
+#include "robot_interfaces/msg/arm_state.hpp" 
 
 using std::placeholders::_1;
 
@@ -22,7 +23,7 @@ class TcpServer : public rclcpp::Node
             publisher_ = this->create_publisher<robot_interfaces::msg::QtRecv>("qt_cmd", 10);
             subscriber_states_ = this->create_subscription<robot_interfaces::msg::ArmState>("arm_states", 10, std::bind(&TcpServer::arm_states_callback, this, _1));
             subscriber_joint_states_ = this->create_subscription<sensor_msgs::msg::JointState>("joint_states", 10, std::bind(&TcpServer::joint_states_callback, this, _1));
-
+            subscriber_plan_result_ = this->create_subscription<std_msgs::msg::Bool>("plan_result", 10, std::bind(&TcpServer::plan_result_feedback, this, _1));
             server_fd_ = socket(AF_INET, SOCK_STREAM, 0);
             if (server_fd_ < 0) {
                 RCLCPP_ERROR(this->get_logger(), "Socket creation failed!");
@@ -74,6 +75,7 @@ class TcpServer : public rclcpp::Node
         rclcpp::Publisher<robot_interfaces::msg::QtRecv>::SharedPtr publisher_;
         rclcpp::Subscription<robot_interfaces::msg::ArmState>::SharedPtr subscriber_states_;
         rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscriber_joint_states_;
+        rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr subscriber_plan_result_;
 
         void acceptLoop() {
             while (rclcpp::ok()) {
@@ -268,15 +270,13 @@ class TcpServer : public rclcpp::Node
             }
         }
 
-        void arm_states_callback(const robot_interfaces::msg::ArmState::SharedPtr msg)
-        {
+        void arm_states_callback(const robot_interfaces::msg::ArmState::SharedPtr msg) {
             //tf2::fromMsg(msg->end_effector_quat, end_effector_quat);
             tf2::fromMsg(msg->end_effector_pose.orientation, end_effector_quat);
             end_effector_pose = msg->end_effector_pose;
         }
         
-        void joint_states_callback(const sensor_msgs::msg::JointState::SharedPtr msg)
-        {
+        void joint_states_callback(const sensor_msgs::msg::JointState::SharedPtr msg) {
             if (client_fd_ <= 0) {
                 RCLCPP_INFO(this->get_logger(), "No client connected to send joint_states");
                 return;
@@ -297,6 +297,28 @@ class TcpServer : public rclcpp::Node
 
             send(client_fd_, buffer.data(), dataSize, 0);
             // RCLCPP_INFO(this->get_logger(), "Sent joint positions and efforts to client");
+        }
+
+        void plan_result_feedback(std_msgs::msg::Bool::SharedPtr msg) {
+            if (client_fd_ <= 0) {
+                RCLCPP_INFO(this->get_logger(), "No client connected to send joint_states");
+                return;
+            }
+            else if (msg->data == false) {
+                uint8_t data_buffer[18];
+                for (uint8_t i = 0; i < 18; i++) {
+                    data_buffer[i] = 0xFF;
+                }
+                send(client_fd_, data_buffer, sizeof(data_buffer), 0);
+            }
+
+            else if (msg->data == true) {
+                uint8_t data_buffer[18];
+                for (uint8_t i = 0; i < 18; i++) {
+                    data_buffer[i] = 0xEE;
+                }
+                send(client_fd_, data_buffer, sizeof(data_buffer), 0);
+            }
         }
 };
 
